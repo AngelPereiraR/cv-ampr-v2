@@ -1,0 +1,61 @@
+<div>
+  <!-- Overlay -->
+  <div
+    class="fixed inset-0 bg-black bg-opacity-70 transition-opacity duration-300 ease-in-out"
+    [ngClass]="{
+      'opacity-0 pointer-events-none': !isOpen,
+      'opacity-100': isOpen
+    }"
+    (click)="toggleDrawer()"
+  ></div>
+
+  <!-- Drawer -->
+  <div
+    class="fixed top-0 left-0 h-full w-64 bg-blue-600 shadow-lg transform transition-transform duration-300 ease-in-out"
+    [ngClass]="{ '-translate-x-full': !isOpen, 'translate-x-0': isOpen }"
+  >
+    <button
+      class="absolute top-4 left-6 text-2xl text-white font-bold"
+      (click)="toggleDrawer()"
+    >
+      X
+    </button>
+    <!-- Contenido del drawer -->
+    <div class="pt-16 p-5">
+      <nav>
+        <ul class="flex flex-col w-4/6 justify-center items-center text-white">
+          <li
+            class="px-3 py-2 text-xl font-bold hover:text-green-200 transition-all"
+          >
+            <a href="#home">Home</a>
+          </li>
+          <li
+            class="px-3 py-2 text-xl font-bold hover:text-green-200 transition-all"
+          >
+            <a href="#services">Servicios</a>
+          </li>
+          <li
+            class="px-3 py-2 text-xl font-bold hover:text-green-200 transition-all"
+          >
+            <a href="#about">Sobre mí</a>
+          </li>
+          <li
+            class="px-3 py-2 text-xl font-bold hover:text-green-200 transition-all"
+          >
+            <a href="#resume">Resumen</a>
+          </li>
+          <li
+            class="px-3 py-2 text-xl font-bold hover:text-green-200 transition-all"
+          >
+            <a href="#projects">Proyectos</a>
+          </li>
+          <li
+            class="px-3 py-2 text-xl font-bold hover:text-green-200 transition-all"
+          >
+            <a href="#contact">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</div>
