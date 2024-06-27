@@ -1,1 +1,487 @@
-<p>resume works!</p>
+<section
+  class="p-10 xl:py-20 xl:px-20 2xl:px-52 flex flex-col lg:flex-row justify-between bg-gray-100"
+>
+  <div class="w-full lg:w-1/4">
+    <header class="mr-20">
+      <h1 class="text-lg font-bold text-green-600 pb-3 lg:pb-0">Resumen</h1>
+      <h2 class="text-5xl 2xl:text-7xl font-bold pb-3 lg:pb-0">Mis detalles</h2>
+    </header>
+    <nav class="mt-10">
+      <ul>
+        <li
+          class="text-lg p-4 m-2 font-bold rounded-lg flex flex-row justify-between items-center hover:bg-black hover:text-white transition-all duration-500"
+          [ngClass]="{
+            'bg-black': aboutSelected,
+            'text-white': aboutSelected,
+            'bg-white': !aboutSelected,
+            'text-black': !aboutSelected
+          }"
+          (click)="toggleAbout()"
+        >
+          <p>Sobre mí</p>
+          <i class="fa-solid fa-arrow-up rotate-45 px-2"></i>
+        </li>
+        <li
+          class="text-lg p-4 m-2 font-bold rounded-lg flex flex-row justify-between items-center hover:bg-black hover:text-white transition-all duration-500"
+          [ngClass]="{
+            'bg-black': experienceSelected,
+            'text-white': experienceSelected,
+            'bg-white': !experienceSelected,
+            'text-black': !experienceSelected
+          }"
+          (click)="toggleExperience()"
+        >
+          <p>Experiencia</p>
+          <i class="fa-solid fa-arrow-up rotate-45 px-2"></i>
+        </li>
+        <li
+          class="text-lg p-4 m-2 font-bold rounded-lg flex flex-row justify-between items-center hover:bg-black hover:text-white transition-all duration-500"
+          [ngClass]="{
+            'bg-black': educationSelected,
+            'text-white': educationSelected,
+            'bg-white': !educationSelected,
+            'text-black': !educationSelected
+          }"
+          (click)="toggleEducation()"
+        >
+          <p>Educación</p>
+          <i class="fa-solid fa-arrow-up rotate-45 px-2"></i>
+        </li>
+        <li
+          class="text-lg p-4 m-2 font-bold rounded-lg flex flex-row justify-between items-center hover:bg-black hover:text-white transition-all duration-500"
+          [ngClass]="{
+            'bg-black': skillsSelected,
+            'text-white': skillsSelected,
+            'bg-white': !skillsSelected,
+            'text-black': !skillsSelected
+          }"
+          (click)="toggleSkills()"
+        >
+          <p>Habilidades</p>
+          <i class="fa-solid fa-arrow-up rotate-45 px-2"></i>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <section
+    *ngIf="aboutSelected"
+    class="flex flex-col lg:flex-row items-start justify-start w-full lg:w-3/4 pl-0 lg:pl-32 mt-10 lg:mt-0"
+  >
+    <div>
+      <h2 class="text-3xl font-semibold">Desde España</h2>
+      <p class="text-sm lg:text-lg tracking-wide leading-6 mt-5">
+        Ángel Manuel Pereira Rodríguez,
+        <strong>desarrollador Fullstack y Qlik</strong>, desde <b>España</b>.
+        Soy un desarrollador español que crea aplicaciones que resuelven
+        necesidades de clientes. También tengo experiencia dentro del mundo de
+        la <b>Inteligencia de Negocio</b>.
+      </p>
+      <div class="flex flex-col mt-10">
+        <div class="flex flex-row mb-4 justify-between items-center">
+          <h3 class="text-sm lg:text-lg">Nombre</h3>
+          <p class="pl-5 text-base lg:text-2xl font-bold">
+            Ángel Manuel Pereira Rodríguez
+          </p>
+        </div>
+        <div class="flex flex-row mb-4 justify-between items-center">
+          <h3 class="text-sm lg:text-lg">Nacionalidad</h3>
+          <p class="pl-5 text-base lg:text-2xl font-bold">España</p>
+        </div>
+        <div class="flex flex-row mb-4 justify-between items-center">
+          <h3 class="text-sm lg:text-lg">Teléfono</h3>
+          <p class="pl-5 text-base lg:text-2xl font-bold">+34 636 16 08 17</p>
+        </div>
+        <div class="flex flex-row mb-4 justify-between items-center">
+          <h3 class="text-sm lg:text-lg">Correo</h3>
+          <p class="pl-5 text-base lg:text-2xl font-bold">
+            ampr2003&#64;gmail.com
+          </p>
+        </div>
+        <div class="flex flex-row mb-4 justify-between items-center">
+          <h3 class="text-sm lg:text-lg">Experiencia</h3>
+          <p class="pl-5 text-base lg:text-2xl font-bold">
+            2 años haciendo proyectos
+          </p>
+        </div>
+        <div class="flex flex-row mb-4 justify-between items-center">
+          <h3 class="text-sm lg:text-lg">Idiomas</h3>
+          <p class="pl-5 text-base lg:text-2xl font-bold">Español, Inglés</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    *ngIf="experienceSelected"
+    class="flex flex-col lg:flex-row items-start justify-start w-full lg:w-3/4 pl-0 lg:pl-32 mt-10 lg:mt-0"
+  >
+    <div>
+      <h2 class="text-3xl font-semibold">Experiencia</h2>
+      <div class="grid grid-flow-row grid-cols-2 mt-5">
+        <div
+          class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+        >
+          <p class="text-xs lg:text-base mb-2">11/2023 - actualidad</p>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">Dev</h4>
+          <h3 class="text-base lg:text-2xl font-bold">Full Stack Developer</h3>
+        </div>
+        <div
+          class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+        >
+          <p class="text-xs lg:text-base mb-2">03/2023 - 06/2023 · 4 meses</p>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">MERCANZA</h4>
+          <h3 class="text-base lg:text-2xl font-bold">
+            Qlik Sense Developer en prácticas
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    *ngIf="educationSelected"
+    class="flex flex-col lg:flex-row items-start justify-start w-full lg:w-3/4 pl-0 lg:pl-32 mt-10 lg:mt-0"
+  >
+    <div>
+      <h2 class="text-3xl font-semibold">Educación</h2>
+      <div class="grid grid-flow-row grid-cols-2 mt-5">
+        <div
+          class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+        >
+          <p class="text-xs lg:text-base mb-2">2024</p>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">
+            Escuela de Organización Industrial EOI
+          </h4>
+          <h3 class="text-base lg:text-2xl font-bold">
+            Curso de Desarrollo APP WEB (253 horas)
+          </h3>
+        </div>
+        <div
+          class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+        >
+          <p class="text-xs lg:text-base mb-2">2024</p>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">Udemy</h4>
+          <h3 class="text-base lg:text-2xl font-bold">
+            Flutter - Móvil: De cero a experto (50,5 horas)
+          </h3>
+        </div>
+        <div
+          class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+        >
+          <p class="text-xs lg:text-base mb-2">2023</p>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">Udemy</h4>
+          <h3 class="text-base lg:text-2xl font-bold">
+            Angular: De cero a experto - Edición 2023 (46 horas)
+          </h3>
+        </div>
+        <div
+          class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+        >
+          <p class="text-xs lg:text-base mb-2">2023</p>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">Udemy</h4>
+          <h3 class="text-base lg:text-2xl font-bold">
+            JavaScript Moderno: Guía para dominar el lenguaje (22,5 horas)
+          </h3>
+        </div>
+        <div
+          class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+        >
+          <p class="text-xs lg:text-base mb-2">2023</p>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">Udemy</h4>
+          <h3 class="text-base lg:text-2xl font-bold">
+            Legacy - Flutter: Tu guía completa para IOS y Android (37,5 horas)
+          </h3>
+        </div>
+        <div
+          class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+        >
+          <p class="text-xs lg:text-base mb-2">2021 - 2023</p>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">
+            Centro Concertado de Enseñanza San Ignacio - Cádiz, España
+          </h4>
+          <h3 class="text-base lg:text-2xl font-bold">
+            Titulo Grado Superior de Desarrollo de Aplicaciones Multiplataforma
+            (2000 horas)
+          </h3>
+        </div>
+        <div
+          class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+        >
+          <p class="text-xs lg:text-base mb-2">2019 - 2021</p>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">
+            Centro Concertado de Enseñanza San Ignacio - Cádiz, España
+          </h4>
+          <h3 class="text-base lg:text-2xl font-bold">
+            Titulo Bachillerato de Ciencias Tecnológico (2000 horas)
+          </h3>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section
+    *ngIf="skillsSelected"
+    class="flex flex-col lg:flex-row items-start justify-start w-full lg:w-3/4 pl-0 lg:pl-32 mt-10 lg:mt-0"
+  >
+    <div>
+      <h2 class="text-3xl font-semibold">Habilidades</h2>
+      <div>
+        <div
+          class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-5"
+        >
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/html-1.svg"
+              alt="HTML"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">HTML</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/css-3.svg"
+              alt="CSS"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">CSS</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img class="p-2 h-20" src="assets/tecnologies/rss.svg" alt="RSS" />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">RSS</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/java-4.svg"
+              alt="Java"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Java</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/spring-3.svg"
+              alt="Spring Boot"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Spring</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/flutter.svg"
+              alt="Flutter"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Flutter</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/laravel-2.svg"
+              alt="Laravel"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Laravel</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/python-5.svg"
+              alt="Python"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Python</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/django.svg"
+              alt="Django"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Django</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/xml-2.svg"
+              alt="XML"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">XML</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/qlik-1.svg"
+              alt="Qlik Sense"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">
+              Qlik Sense
+            </h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/mysql-logo.svg"
+              alt="MySQL"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">MySQL</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/mongodb-icon-1.svg"
+              alt="MongoDB"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">MongoDB</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/odoo.svg"
+              alt="Odoo"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Odoo</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/github-icon-1.svg"
+              alt="GitHub"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">GitHub</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/trello.svg"
+              alt="Trello"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Trello</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/javascript-1.svg"
+              alt="JavaScript"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">
+              JavaScript
+            </h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/vitejs.svg"
+              alt="ViteJS"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">ViteJS</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/typescript.svg"
+              alt="TypeScript"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">
+              TypeScript
+            </h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/angular-icon-1.svg"
+              alt="Angular"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Angular</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/nestjs.svg"
+              alt="NestJS"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">NestJS</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/docker.svg"
+              alt="Docker"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Docker</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/nodejs.svg"
+              alt="Node JS"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Node JS</h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/expressjs.webp"
+              alt="Express.js"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">
+              Express.js
+            </h3>
+          </div>
+          <div
+            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5"
+          >
+            <img
+              class="p-2 h-20"
+              src="assets/tecnologies/vue.webp"
+              alt="Vue.js"
+            />
+            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Vue.js</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>
