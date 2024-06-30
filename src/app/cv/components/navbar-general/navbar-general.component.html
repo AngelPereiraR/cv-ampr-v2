@@ -1,0 +1,40 @@
+<header>
+  <nav
+    class="fixed z-50 top-0 p-3 flex flex-row w-full items-center text-center bg-blue-800 text-white"
+  >
+    <ul class="flex flex-row w-1/6 items-center">
+      <li class="px-2">
+        <a href=""
+          ><img
+            class="h-6 sm:h-12 transition-all duration-500 hover:scale-110"
+            src="assets/logo.webp"
+            alt="Logo"
+        /></a>
+      </li>
+    </ul>
+    <ul class="flex flex-row ml-auto items-center">
+      <li class="px-3">
+        <button>
+          <img
+            class="h-6 sm:h-12 transition-all duration-500 hover:scale-110"
+            src="assets/Spanish.svg"
+            alt="Cambiar idioma a español"
+            title="Cambiar idioma a español"
+          />
+        </button>
+      </li>
+      <li class="px-3">
+        <button>
+          <img
+            class="h-6 sm:h-12 transition-all duration-500 hover:scale-110"
+            src="assets/English.svg"
+            alt="Change language to English"
+            title="Change language to English"
+          />
+        </button>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<app-drawer #drawer></app-drawer>

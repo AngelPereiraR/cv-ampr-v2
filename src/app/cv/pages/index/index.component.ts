@@ -5,6 +5,7 @@ import { ServicesComponent } from '../../components/services_component/services.
 import { AboutComponent } from '../../components/about_component/about.component';
 import { ResumeComponent } from '../../components/resume_component/resume.component';
 import { ProjectsComponent } from '../../components/projects_component/projects.component';
+import { NavbarIndexComponent } from '../../components/navbar-index/navbar-index.component';
 
 @Component({
   selector: 'app-index',
@@ -18,6 +19,7 @@ import { ProjectsComponent } from '../../components/projects_component/projects.
     AboutComponent,
     ResumeComponent,
     ProjectsComponent,
+    NavbarIndexComponent,
   ],
 })
 export class IndexComponent implements OnInit {
