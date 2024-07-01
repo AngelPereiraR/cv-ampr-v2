@@ -1,26 +1,29 @@
 <section
   class="p-10 xl:p-20 2xl:px-52 bg-green-200 flex flex-col lg:flex-row justify-between"
+  *transloco="let t; prefix: 'home'"
 >
   <div>
     <header>
       <h1 class="text-8xl font-bold">
-        <span class="text-2xl">Hola, Soy</span>
+        <span class="text-2xl">{{ t("i'm") | transloco }}</span>
         <p class="tracking-wide">Ángel Pereira</p>
       </h1>
       <h2 class="text-2xl py-5 font-semibold tracking-wide leading-6">
-        Desarrollador Fullstack y Qlik | Desde España
+        {{ t("description") | transloco }}
       </h2>
     </header>
     <div class="py-5 flex flex-col lg:flex-row justify-center items-center">
       <a
         class="p-5 my-3 lg:mr-3 font-bold bg-black text-white hover:bg-white hover:text-black transition-all duration-500 border-2 border-black rounded-lg"
         href="tel:+34636160817"
-        >Hablemos <i class="fa-solid fa-arrow-up rotate-45 px-2"></i
+        >{{ t("talk") | transloco }}
+        <i class="fa-solid fa-arrow-up rotate-45 px-2"></i
       ></a>
       <a
         class="p-5 my-3 lg:mx-3 font-bold bg-white text-black hover:bg-black hover:text-white transition-all duration-500 border-2 border-black rounded-lg"
         href="projects"
-        >Mis proyectos <i class="fa-solid fa-arrow-up rotate-45 px-2"></i
+        >{{ t("work") | transloco }}
+        <i class="fa-solid fa-arrow-up rotate-45 px-2"></i
       ></a>
       <a
         class="p-5 my-3 lg:mx-3 bg-blue-600 hover:bg-black transition-all duration-500 border-2 border-black rounded-lg"
@@ -34,11 +37,14 @@
         class="p-5 my-3 lg:mx-3 font-bold bg-blue-600 text-white hover:bg-black transition-all duration-500 border-2 border-black rounded-lg"
         href="assets/CV-ampr.pdf"
         target="_blank"
-        >Descargar mi CV <i class="fa-solid fa-arrow-up rotate-45 px-2"></i
+        >{{ t("cv") | transloco }}
+        <i class="fa-solid fa-arrow-up rotate-45 px-2"></i
       ></a>
     </div>
     <div class="text-xl pt-10">
-      <h3 class="font-medium pb-6 tracking-wide leading-6">Mis redes</h3>
+      <h3 class="font-medium pb-6 tracking-wide leading-6">
+        {{ t("social-media") | transloco }}
+      </h3>
       <div class="flex flex-row items-center">
         <a href="https://github.com/AngelPereiraR" class="pr-4">
           <i
@@ -53,7 +59,7 @@
             class="fa-brands fa-linkedin fa-2xl hover:scale-110 transition-all duration-500"
           ></i>
         </a>
-        <p class="pl-4 text-2xl font-bold">| Abierto para trabajar</p>
+        <p class="pl-4 text-2xl font-bold">| {{ t("open") | transloco }}</p>
       </div>
     </div>
   </div>

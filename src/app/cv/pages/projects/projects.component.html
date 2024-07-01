@@ -1,12 +1,12 @@
 <app-navbar-general></app-navbar-general>
 
-<main>
+<main *transloco="let t; prefix: 'projects'">
   <section class="p-10 py-32 xl:px-20 2xl:px-52 bg-green-200">
     <div>
       <header class="flex flex-col justify-between items-center">
         <h1 class="text-lg font-bold text-green-600 pb-3 lg:pb-0">Portfolio</h1>
         <h2 class="text-5xl 2xl:text-7xl font-bold pb-3 lg:pb-0">
-          Mis proyectos
+          {{ t("projects-title") | transloco }}
         </h2>
       </header>
       <div class="mt-10 grid grid-flow-row grid-cols-1 xl:grid-cols-2">

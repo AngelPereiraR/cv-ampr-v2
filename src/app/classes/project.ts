@@ -1,7 +1,7 @@
 export class Project {
   id: number;
   name: string;
-  description: string[];
+  description: number[];
   images: string[];
   technologies: string[];
   githubLink?: string;
@@ -10,7 +10,7 @@ export class Project {
   constructor(
     id: number,
     name: string,
-    description: string[],
+    description: number[],
     images: string[],
     technologies: string[],
     githubLink?: string,

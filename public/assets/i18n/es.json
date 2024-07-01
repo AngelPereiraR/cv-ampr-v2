@@ -1,249 +1,118 @@
 {
-  "about": {
-    "title": "Sobre mí",
-    "name": {
-      "title": "Nombre",
-      "value": "Ángel Manuel Pereira Rodríguez"
-    },
-    "job": {
-      "title": "Especialización",
-      "value": "Desarrollador Júnior Full Stack y de Qlik"
-    },
-    "objectives": {
-      "title": "Objetivos",
-      "value": "Estoy interesado en el desarrollo para Android e IOS, especialmente en el backend."
-    },
-    "how": {
-      "title": "¿Cómo decidí dedicarme a esto?",
-      "first_phrase": "Desde mi infancia, siempre tuve una fascinación por los ordenadores y los videojuegos.",
-      "second_phrase": "Al ingresar al primer año de Educación Secundaria Obligatoria (ESO), decidí sumergirme en el aprendizaje de un lenguaje de programación, y la elección fue el lenguaje C.",
-      "third_phrase": "A lo largo de los años de la ESO, desarrollé varias aplicaciones simples a medida que iba adquiriendo conocimientos de programación de manera gradual.",
-      "forth_phrase": "Fue en el primer año de Bachillerato cuando comencé a explorar las bases de HTML, un lenguaje fundamental para el desarrollo web.",
-      "fifth_phrase": "En ese momento, tomé la decisión de convertirme en programador.",
-      "sixth_phrase": "Al completar el Bachillerato, opté por iniciar el grado superior de Desarrollo de Aplicaciones Multiplataforma (DAM)."
-    },
-    "plans": {
-      "title": "Planes a corto plazo",
-      "first_project": {
-        "value": "Realización de varios proyectos (Actualmente en desarrollo).",
-        "description": "| Aplicaciones y Web como regalos para familiares."
-      },
-      "second_project": {
-        "value": "Realización de un proyecto (Actualmente en desarrollo).",
-        "description": "| Aplicación móvil de Inventario Doméstico."
-      },
-      "third_project": {
-        "value": "Realización de un proyecto.",
-        "description": "| Página web de una peluquería."
-      },
-      "forth_project": {
-        "value": "Realización de un proyecto.",
-        "description": "| Página web para mostrar y gestionar el portfolio de un cliente.",
-        "backend": "Backend: Por determinar"
-      },
-      "first_course": {
-        "value": "Realización de un curso de YouTube sobre HTML y CSS."
-      },
-      "second_course": {
-        "value": "Realización de un curso de Udemy sobre Ionic."
-      },
-      "third_course": {
-        "value": "Realización de un curso de Udemy sobre .NET."
-      }
-    },
-    "cv": "Descarga mi CV"
-  },
-  "experience": {
-    "header": {
-      "title": "Mi experiencia",
-      "description": "Mi camino en el mundo de la programación."
-    },
-    "item": {
-      "timeline": {
-        "first_section_year": {
-          "year": "2021",
-          "first_section_month": {
-            "month": "Septiembre - Diciembre",
-            "first_phrase": "Comienzo el primer curso del grado superior Desarrollo de Aplicaciones Multiplataforma (DAM).",
-            "second_phrase": "Empiezo a aprender Java (hasta bucles y arrays), HTML, CSS, SQL y RSS."
-          }
-        },
-        "second_section_year": {
-          "year": "2022",
-          "first_section_month": {
-            "month": "Enero - Mayo",
-            "first_phrase": "Continúo el primer curso de DAM hasta terminar en mayo.",
-            "second_phrase": "Sigo aprendiendo Java (listas, colecciones, Java 8, primeras bases de datos MySQL e interfaces de escritorio; primer proyecto colaborativo de interfaces de escritorio), SQL y XML."
-          },
-          "second_section_month": {
-            "month": "Septiembre - Diciembre",
-            "first_phrase": "Comienzo el segundo curso de DAM.",
-            "second_phrase": "Empiezo a aprender Spring (junto al uso de las primeras bases de datos de MongoDB), Laravel, Flutter, Python y Django.",
-            "third_phrase": "A su vez, empiezo a desarrollar los proyectos colaborativos correspondiente a cada asignatura con esos lenguajes / frameworks."
-          }
-        },
-        "third_section_year": {
-          "year": "2023",
-          "first_section_month": {
-            "month": "Enero - Febrero",
-            "first_phrase": "Terminamos de realizar los proyectos colaborativos."
-          },
-          "second_section_month": {
-            "month": "Marzo",
-            "first_phrase": "Comienzo las prácticas en Controlnet Web S.L.",
-            "second_phrase": "Recibo formación en Qlik Sense durante dos semanas."
-          },
-          "third_section_month": {
-            "month": "Abril - Junio",
-            "first_phrase": "Colaboro en diversos proyectos de MERCANZA realizados en Qlik Sense para la Comunidad de Madrid.",
-            "second_phrase": "Realización del proyecto de fin del grado superior DAM."
-          },
-          "forth_section_month": {
-            "month": "Junio",
-            "first_phrase": "Terminan las prácticas en Controlnet Web S.L.",
-            "second_phrase": "Graduación y obtención del título del grado superior DAM."
-          },
-          "fifth_section_month": {
-            "month": "Septiembre",
-            "first_phrase": "Aprendo JavaScript y ViteJS gracias al curso de Fernando Herrera 'JavaScript Moderno: Guía para dominar el lenguaje'. Aplico lo aprendido en los proyectos educativos del curso."
-          },
-          "sixth_section_month": {
-            "month": "Octubre - Noviembre",
-            "first_phrase": "Aprendo TypeScript, Angular y NestJS, además de Docker, gracias al curso de Fernando Herrera 'Angular: De cero a experto'. Aplico lo aprendido en los proyectos educativos del curso."
-          },
-          "seventh_section_month": {
-            "month": "Noviembre",
-            "first_phrase": "Realización de mi página web personal.",
-            "link": "https://portfolio-angelpereira.netlify.app"
-          },
-          "eighth_section_month": {
-            "month": "Noviembre - Diciembre",
-            "first_phrase": "Comienzo del desarrollo del FrutyFest, una página web para un evento de Minecraft para ByFruty, streamer de Twitch y YouTuber."
-          }
-        },
-        "forth_section_year": {
-          "year": "2024",
-          "first_section_month": {
-            "month": "Enero",
-            "first_phrase": "Continuación de FrutyFest y publicación de la 'beta' de la página web.",
-            "link": "https://frutyfest.netlify.app",
-            "second_phrase": "Actualización de mi página web personal. Cambio de organización de la misma, planes a corto plazo, proyectos y 'Quality of Life' para la página."
-          },
-          "second_section_month": {
-            "month": "Febrero - Marzo",
-            "first_phrase": "Profundizo mis conocimientos en Flutter gracias al curso de Fernando Herrera 'Flutter - Móvil: De cero a experto'.",
-            "second_phrase": "Sigo desarrollando el FrutyFest.",
-            "third_phrase": "Realizo un proyecto de una aplicación móvil como regalo para mi padre por su cumpleaños."
-          },
-          "third_section_month": {
-            "month": "Abril - Mayo",
-            "first_phrase": "Termino de desarrollar la página web del FrutyFest.",
-            "second_phrase": "Realizo un proyecto de una aplicación móvil como regalo para mi madre por su cumpleaños.",
-            "third_phrase": "Publicación oficial del FrutyFest.",
-            "link": "https://frutyfest.netlify.app"
-          }
-        }
-      },
-      "projects": {
-        "internet": {
-          "title": "Proyectos alojados en Internet",
-          "description": "Proyectos que tengo en la red o disponibles para descargar.",
-          "first_project": {
-            "description": "Gestión Empresas",
-            "first_phrase": "El proyecto es una aplicación que simplifica la gestión de catálogos para empresas y permite a los clientes hacer pedidos de forma interactiva.",
-            "second_phrase": "Para empresas, ofrece funciones de inicio de sesión y gestión de catálogo, visualización con filtros y gestión de sugerencias de clientes.",
-            "third_phrase": "Los clientes, tras registro y validación, exploran catálogos, gestionan un carrito, dan sugerencias y generan pedidos con confirmación adicional.",
-            "forth_phrase": "El administrador controla la gestión de usuarios, datos de empresas, productos, categorías, sugerencias y pedidos, teniendo un control total sobre la aplicación.",
-            "fifth_phrase": "En resumen, mejora la interacción y eficiencia en la gestión de pedidos entre empresas y clientes.",
-            "download": "Descargar"
-          },
-          "second_project": {
-            "description": "FrutyFest",
-            "first_phrase": "La página web del FrutyFest, un evento organizado por ByFruty, streamer de Twitch y YouTuber, ofrece información sobre las ediciones pasadas y futuras del evento.",
-            "second_phrase": "Presenta una tabla con los participantes seleccionados y un ranking basado en las puntuaciones obtenidas.",
-            "third_phrase": "Para participar, los usuarios deben registrarse y ser seleccionados por un administrador, quien también puede gestionar equipos y modos de juego en la base de datos.",
-            "forth_phrase": "Durante el evento, los administradores califican cada modo de juego según las reglas establecidas."
-          }
-        },
-        "collaborative": {
-          "title": "Proyectos locales colaborativos",
-          "description": "Proyectos en local desarrollados durante el periodo escolar para el aprendizaje de las asignaturas realizados con compañeros de clase.",
-          "first_project": {
-            "first_phrase": "Se trata de una página web que cuenta con un sistema de administración y usuarios.",
-            "second_phrase": "Los usuarios deben registrarse para acceder al contenido de la página.",
-            "third_phrase": "El administrador tiene la responsabilidad de agregar ofertas y artículos.",
-            "forth_phrase": "Los usuarios pueden visualizar las ofertas disponibles y aplicar a ellas.",
-            "fifth_phrase": "Después de aplicar, tienen la opción de generar un PDF con las ofertas a las que han aplicado, el cual pueden enviar por correo electrónico o descargar directamente."
-          },
-          "second_project": {
-            "first_phrase": "Es una página web que involucra a un administrador, profesores y alumnos.",
-            "second_phrase": "Los profesores tienen la capacidad de crear noticias y evaluar a los alumnos que están inscritos en sus asignaturas.",
-            "third_phrase": "Los alumnos pueden inscribirse en las asignaturas de cualquier profesor y visualizar las calificaciones correspondientes."
-          },
-          "third_project": {
-            "first_phrase": "Es una aplicación móvil desarrollada en Flutter que permite a empresas mayoristas agregar productos a una base de datos y asignarles precios.",
-            "second_phrase": "Además, empresas minoristas pueden registrarse como usuarios para realizar pedidos a las empresas mayoristas.",
-            "backend": "Backend: API de Laravel realizada por el profesor (Abandonado)",
-            "note": "Actualmente fuera de servicio"
-          }
-        }
-      }
-    }
-  },
-  "knowledge": {
-    "header": {
-      "title": "Mis conocimientos",
-      "description": "Todos los cursos y certificaciones que tengo, más las tecnologías con las que sé trabajar actualmente."
-    },
-    "item": {
-      "courses_and_certificates": {
-        "title": "< Cursos y Certificaciones en orden cronológico />",
-        "courses": {
-          "title": "< Cursos />",
-          "first_course": {
-            "title": "Título Grado Superior de Desarrollo de Aplicaciones Multiplataforma",
-            "school": "Centro Concertado de Enseñanza San Ignacio",
-            "year": "2021-2023"
-          }
-        },
-        "certificates": {
-          "title": "< Certificados />",
-          "first_certificate": {
-            "title": "Flutter - Móvil: De cero a experto",
-            "institution": "Udemy",
-            "year": "2024"
-          },
-          "second_certificate": {
-            "title": "Angular: De cero a experto - Edición 2023",
-            "institution": "Udemy",
-            "year": "2023"
-          },
-          "third_certificate": {
-            "title": "JavaScript Moderno: Guía para dominar el lenguaje",
-            "institution": "Udemy",
-            "year": "2023"
-          },
-          "forth_certificate": {
-            "title": "Legacy - Flutter: Tu guía completa para IOS y Android",
-            "institution": "Udemy",
-            "year": "2022-2023"
-          },
-          "fifth_certificate": {
-            "title": "Inglés - Nivel B2",
-            "institution": "Cambridge",
-            "year": "2019"
-          }
-        }
-      },
-      "technologies": "< Tecnologías />"
-    }
-  },
   "navbar": {
-    "buttons": {
-      "about": "Sobre mí",
+    "home": "Inicio",
+    "services": "Servicios",
+    "about": "Sobre mí",
+    "resume": "Resumen",
+    "projects": "Proyectos"
+  },
+  "home": {
+    "i'm": "Hola, Soy",
+    "description": "Desarrollador Fullstack y Qlik | Desde España",
+    "talk": "Hablemos",
+    "work": "Mis proyectos",
+    "cv": "Descargar mi CV",
+    "social-media": "Mis redes",
+    "open": "Abierto para trabajar"
+  },
+  "services": {
+    "services": "Servicios",
+    "specialties": "Mis especialidades",
+    "mobile": "Aplicaciones móviles",
+    "databases": "Bases de datos",
+    "hello": "Saluda"
+  },
+  "about": {
+    "i'm": "Hola, soy",
+    "description": "Ángel Pereira, desarrollador fullstack y Qlik",
+    "based": "Desde España",
+    "experience": "2 años realizando proyectos",
+    "info": "Soy un desarrollador español que crea aplicaciones que resuelven necesidades de clientes. También tengo experiencia dentro del mundo de la Inteligencia de Negocio.",
+    "cv": "Descarga mi CV aquí"
+  },
+  "resume": {
+    "resume": "Resumen",
+    "details": "Mis detalles",
+    "about": {
+      "title": "Sobre mí",
+      "subtitle": "Desde España",
+      "description": "Ángel Manuel Pereira Rodríguez, desarrollador Fullstack y Qlik, desde España. Soy un desarrollador español que crea aplicaciones que resuelven necesidades de clientes. También tengo experiencia dentro del mundo de la Inteligencia de Negocio.",
+      "name": "Nombre",
+      "nacionality": "Nacionalidad",
+      "country": "España",
+      "telephone": "Teléfono",
+      "email": "Correo",
       "experience": "Experiencia",
-      "projects": "Proyectos",
-      "knowledge": "Conocimientos"
+      "experience-definition": "2 años haciendo proyectos",
+      "languages": "Idiomas",
+      "languages-definition": "Español nativo, Inglés B2 Cambridge"
+    },
+    "experience": {
+      "title": "Experiencia",
+      "first-experience-time": "11/2023 - actualidad",
+      "first-experience-title": "Desarrollador Fullstack",
+      "second-experience-time": "03/2023 - 06/2023 · 4 meses",
+      "second-experience-title": "Desarrollador Qlik Sense en prácticas"
+    },
+    "education": {
+      "title": "Educación",
+      "hours": "horas",
+      "ignacio": "Centro Concertado de Enseñanza San Ignacio - Cádiz, España"
+    },
+    "skills": {
+      "title": "Habilidades"
     }
+  },
+  "projects": {
+    "index-title": "Mis proyectos recientes",
+    "see-all": "Ver todos los proyectos",
+    "projects-title": "Mis proyectos",
+    "description": "Descripción",
+    "technologies": "Tecnologías",
+    "links": {
+      "links": "Enlaces",
+      "github": "Enlace a Github",
+      "download": "Descargar app",
+      "live": "Versión Live",
+      "see-all": "Ver todos los proyectos",
+      "principal": "Ir a página principal"
+    },
+    "project-1": {
+      "line-1": "La página web del FrutyFest, un evento organizado por ByFruty, streamer de Twitch y YouTuber, ofrece información sobre las ediciones pasadas y futuras del evento.",
+      "line-2": "Presenta una tabla con los participantes seleccionados y un ranking basado en las puntuaciones obtenidas.",
+      "line-3": "Para participar, los usuarios deben registrarse y ser seleccionados por un administrador, quien también puede gestionar equipos y modos de juego en la base de datos.",
+      "line-4": "Durante el evento, los administradores califican cada modo de juego según las reglas establecidas."
+    },
+    "project-2": {
+      "line-1": "El proyecto es una aplicación que simplifica la gestión de catálogos para empresas y permite a los clientes hacer pedidos de forma interactiva.",
+      "line-2": "Para empresas, ofrece funciones de inicio de sesión y gestión de catálogo, visualización con filtros y gestión de sugerencias de clientes.",
+      "line-3": "Los clientes, tras registro y validación, exploran catálogos, gestionan un carrito, dan sugerencias y generan pedidos con confirmación adicional.",
+      "line-4": "El administrador controla la gestión de usuarios, datos de empresas, productos, categorías, sugerencias y pedidos, teniendo un control total sobre la aplicación.",
+      "line-5": "En resumen, mejora la interacción y eficiencia en la gestión de pedidos entre empresas y clientes."
+    },
+    "project-3": {
+      "line-1": "Se trata de una página web que cuenta con un sistema de administración y usuarios.",
+      "line-2": "Los usuarios deben registrarse para acceder al contenido de la página.",
+      "line-3": "El administrador tiene la responsabilidad de agregar ofertas y artículos.",
+      "line-4": "Los usuarios pueden visualizar las ofertas disponibles y aplicar a ellas.",
+      "line-5": "Después de aplicar, tienen la opción de generar un PDF con las ofertas a las que han aplicado, el cual pueden enviar por correo electrónico o descargar directamente."
+    },
+    "project-4": {
+      "line-1": "Es una página web que involucra a un administrador, profesores y alumnos.",
+      "line-2": "Los profesores tienen la capacidad de crear noticias y evaluar a los alumnos que están inscritos en sus asignaturas.",
+      "line-3": "Los alumnos pueden inscribirse en las asignaturas de cualquier profesor y visualizar las calificaciones correspondientes."
+    },
+    "project-5": {
+      "line-1": "Es una aplicación móvil desarrollada en Flutter que permite a empresas mayoristas agregar productos a una base de datos y asignarles precios.",
+      "line-2": "Además, empresas minoristas pueden registrarse como usuarios para realizar pedidos a las empresas mayoristas.",
+      "line-3": "API de Laravel realizada por un profesor de DAM (Abandonado).",
+      "line-4": "Actualmente fuera de servicio."
+    }
+  },
+  "footer": {
+    "work": "Trabajemos juntos",
+    "based": "Desde España",
+    "developer": "¿Buscas a un desarrollador fullstack?",
+    "in-depth": "¿Quieres conocerme en más profundidad?"
   }
 }

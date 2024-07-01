@@ -1,10 +1,15 @@
 <section
   class="py-20 px-10 xl:p-20 2xl:px-52 flex flex-col lg:flex-row justify-between bg-gray-100"
+  *transloco="let t; prefix: 'resume'"
 >
   <div class="w-full lg:w-1/4">
     <header class="mr-20">
-      <h1 class="text-lg font-bold text-green-600 pb-3 lg:pb-0">Resumen</h1>
-      <h2 class="text-5xl 2xl:text-7xl font-bold pb-3 lg:pb-0">Mis detalles</h2>
+      <h1 class="text-lg font-bold text-green-600 pb-3 lg:pb-0">
+        {{ t("resume") | transloco }}
+      </h1>
+      <h2 class="text-5xl 2xl:text-7xl font-bold pb-3 lg:pb-0">
+        {{ t("details") | transloco }}
+      </h2>
     </header>
     <nav class="mt-10">
       <ul>
@@ -18,7 +23,7 @@
           }"
           (click)="toggleAbout()"
         >
-          <p>Sobre mí</p>
+          <p>{{ t("about.title") | transloco }}</p>
           <i class="fa-solid fa-arrow-up rotate-45 px-2"></i>
         </li>
         <li
@@ -31,7 +36,7 @@
           }"
           (click)="toggleExperience()"
         >
-          <p>Experiencia</p>
+          <p>{{ t("experience.title") | transloco }}</p>
           <i class="fa-solid fa-arrow-up rotate-45 px-2"></i>
         </li>
         <li
@@ -44,7 +49,7 @@
           }"
           (click)="toggleEducation()"
         >
-          <p>Educación</p>
+          <p>{{ t("education.title") | transloco }}</p>
           <i class="fa-solid fa-arrow-up rotate-45 px-2"></i>
         </li>
         <li
@@ -57,7 +62,7 @@
           }"
           (click)="toggleSkills()"
         >
-          <p>Habilidades</p>
+          <p>{{ t("skills.title") | transloco }}</p>
           <i class="fa-solid fa-arrow-up rotate-45 px-2"></i>
         </li>
       </ul>
@@ -68,45 +73,53 @@
     class="flex flex-col lg:flex-row items-start justify-start w-full lg:w-3/4 pl-0 lg:pl-32 mt-10 lg:mt-0"
   >
     <div>
-      <h2 class="text-3xl font-semibold">Desde España</h2>
+      <h2 class="text-3xl font-semibold">
+        {{ t("about.subtitle") | transloco }}
+      </h2>
       <p class="text-sm lg:text-lg tracking-wide leading-6 mt-5">
-        Ángel Manuel Pereira Rodríguez,
-        <strong>desarrollador Fullstack y Qlik</strong>, desde <b>España</b>.
-        Soy un desarrollador español que crea aplicaciones que resuelven
-        necesidades de clientes. También tengo experiencia dentro del mundo de
-        la <b>Inteligencia de Negocio</b>.
+        {{ t("about.description") | transloco }}
       </p>
       <div class="flex flex-col mt-10">
         <div class="flex flex-row mb-4 justify-between items-center">
-          <h3 class="text-sm lg:text-lg">Nombre</h3>
+          <h3 class="text-sm lg:text-lg">{{ t("about.name") | transloco }}</h3>
           <p class="pl-5 text-base lg:text-2xl font-bold">
             Ángel Manuel Pereira Rodríguez
           </p>
         </div>
         <div class="flex flex-row mb-4 justify-between items-center">
-          <h3 class="text-sm lg:text-lg">Nacionalidad</h3>
-          <p class="pl-5 text-base lg:text-2xl font-bold">España</p>
+          <h3 class="text-sm lg:text-lg">
+            {{ t("about.nacionality") | transloco }}
+          </h3>
+          <p class="pl-5 text-base lg:text-2xl font-bold">
+            {{ t("about.country") | transloco }}
+          </p>
         </div>
         <div class="flex flex-row mb-4 justify-between items-center">
-          <h3 class="text-sm lg:text-lg">Teléfono</h3>
+          <h3 class="text-sm lg:text-lg">
+            {{ t("about.telephone") | transloco }}
+          </h3>
           <p class="pl-5 text-base lg:text-2xl font-bold">+34 636 16 08 17</p>
         </div>
         <div class="flex flex-row mb-4 justify-between items-center">
-          <h3 class="text-sm lg:text-lg">Correo</h3>
+          <h3 class="text-sm lg:text-lg">{{ t("about.email") | transloco }}</h3>
           <p class="pl-5 text-base lg:text-2xl font-bold">
             ampr2003&#64;gmail.com
           </p>
         </div>
         <div class="flex flex-row mb-4 justify-between items-center">
-          <h3 class="text-sm lg:text-lg">Experiencia</h3>
+          <h3 class="text-sm lg:text-lg">
+            {{ t("about.experience") | transloco }}
+          </h3>
           <p class="pl-5 text-base lg:text-2xl font-bold">
-            2 años haciendo proyectos
+            {{ t("about.experience-definition") | transloco }}
           </p>
         </div>
         <div class="flex flex-row mb-4 justify-between items-center">
-          <h3 class="text-sm lg:text-lg">Idiomas</h3>
+          <h3 class="text-sm lg:text-lg">
+            {{ t("about.languages") | transloco }}
+          </h3>
           <p class="pl-5 text-base lg:text-2xl font-bold">
-            Español nativo, Inglés B2 Cambridge
+            {{ t("about.languages-definition") | transloco }}
           </p>
         </div>
       </div>
@@ -117,22 +130,30 @@
     class="flex flex-col lg:flex-row items-start justify-start w-full lg:w-3/4 pl-0 lg:pl-32 mt-10 lg:mt-0"
   >
     <div>
-      <h2 class="text-3xl font-semibold">Experiencia</h2>
+      <h2 class="text-3xl font-semibold">
+        {{ t("experience.title") | transloco }}
+      </h2>
       <div class="grid grid-flow-row grid-cols-2 mt-5">
         <div
           class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
         >
-          <p class="text-xs lg:text-base mb-2">11/2023 - actualidad</p>
+          <p class="text-xs lg:text-base mb-2">
+            {{ t("experience.first-experience-time") | transloco }}
+          </p>
           <h4 class="text-sm lg:text-xl font-semibold mb-2">Dev</h4>
-          <h3 class="text-base lg:text-2xl font-bold">Full Stack Developer</h3>
+          <h3 class="text-base lg:text-2xl font-bold">
+            {{ t("experience.first-experience-title") | transloco }}
+          </h3>
         </div>
         <div
           class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
         >
-          <p class="text-xs lg:text-base mb-2">03/2023 - 06/2023 · 4 meses</p>
+          <p class="text-xs lg:text-base mb-2">
+            {{ t("experience.second-experience-time") | transloco }}
+          </p>
           <h4 class="text-sm lg:text-xl font-semibold mb-2">MERCANZA</h4>
           <h3 class="text-base lg:text-2xl font-bold">
-            Qlik Sense Developer en prácticas
+            {{ t("experience.second-experience-title") | transloco }}
           </h3>
         </div>
       </div>
@@ -143,7 +164,9 @@
     class="flex flex-col lg:flex-row items-start justify-start w-full lg:w-3/4 pl-0 lg:pl-32 mt-10 lg:mt-0"
   >
     <div>
-      <h2 class="text-3xl font-semibold">Educación</h2>
+      <h2 class="text-3xl font-semibold">
+        {{ t("education.title") | transloco }}
+      </h2>
       <div class="grid grid-flow-row grid-cols-2 mt-5">
         <div
           class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
@@ -153,7 +176,8 @@
             Escuela de Organización Industrial EOI
           </h4>
           <h3 class="text-base lg:text-2xl font-bold">
-            Curso de Desarrollo APP WEB (253 horas)
+            Curso de Desarrollo APP WEB (253
+            {{ t("education.hours") | transloco }})
           </h3>
         </div>
         <div
@@ -162,7 +186,8 @@
           <p class="text-xs lg:text-base mb-2">2024</p>
           <h4 class="text-sm lg:text-xl font-semibold mb-2">Udemy</h4>
           <h3 class="text-base lg:text-2xl font-bold">
-            Flutter - Móvil: De cero a experto (50,5 horas)
+            Flutter - Móvil: De cero a experto (50,5
+            {{ t("education.hours") | transloco }})
           </h3>
         </div>
         <div
@@ -171,7 +196,8 @@
           <p class="text-xs lg:text-base mb-2">2023</p>
           <h4 class="text-sm lg:text-xl font-semibold mb-2">Udemy</h4>
           <h3 class="text-base lg:text-2xl font-bold">
-            Angular: De cero a experto - Edición 2023 (46 horas)
+            Angular: De cero a experto - Edición 2023 (46
+            {{ t("education.hours") | transloco }})
           </h3>
         </div>
         <div
@@ -180,7 +206,8 @@
           <p class="text-xs lg:text-base mb-2">2023</p>
           <h4 class="text-sm lg:text-xl font-semibold mb-2">Udemy</h4>
           <h3 class="text-base lg:text-2xl font-bold">
-            JavaScript Moderno: Guía para dominar el lenguaje (22,5 horas)
+            JavaScript Moderno: Guía para dominar el lenguaje (22,5
+            {{ t("education.hours") | transloco }})
           </h3>
         </div>
         <div
@@ -189,7 +216,8 @@
           <p class="text-xs lg:text-base mb-2">2023</p>
           <h4 class="text-sm lg:text-xl font-semibold mb-2">Udemy</h4>
           <h3 class="text-base lg:text-2xl font-bold">
-            Legacy - Flutter: Tu guía completa para IOS y Android (37,5 horas)
+            Legacy - Flutter: Tu guía completa para IOS y Android (37,5
+            {{ t("education.hours") | transloco }})
           </h3>
         </div>
         <div
@@ -197,11 +225,11 @@
         >
           <p class="text-xs lg:text-base mb-2">2021 - 2023</p>
           <h4 class="text-sm lg:text-xl font-semibold mb-2">
-            Centro Concertado de Enseñanza San Ignacio - Cádiz, España
+            {{ t("education.ignacio") | transloco }}
           </h4>
           <h3 class="text-base lg:text-2xl font-bold">
             Titulo Grado Superior de Desarrollo de Aplicaciones Multiplataforma
-            (2000 horas)
+            (2000 {{ t("education.hours") | transloco }})
           </h3>
         </div>
         <div
@@ -209,10 +237,11 @@
         >
           <p class="text-xs lg:text-base mb-2">2019 - 2021</p>
           <h4 class="text-sm lg:text-xl font-semibold mb-2">
-            Centro Concertado de Enseñanza San Ignacio - Cádiz, España
+            {{ t("education.ignacio") | transloco }}
           </h4>
           <h3 class="text-base lg:text-2xl font-bold">
-            Titulo Bachillerato de Ciencias Tecnológico (2000 horas)
+            Titulo Bachillerato de Ciencias Tecnológico (2000
+            {{ t("education.hours") | transloco }})
           </h3>
         </div>
       </div>
@@ -223,7 +252,9 @@
     class="flex flex-col lg:flex-row items-start justify-start w-full lg:w-3/4 pl-0 lg:pl-32 mt-10 lg:mt-0"
   >
     <div>
-      <h2 class="text-3xl font-semibold">Habilidades</h2>
+      <h2 class="text-3xl font-semibold">
+        {{ t("skills.title") | transloco }}
+      </h2>
       <div>
         <div
           class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-5"

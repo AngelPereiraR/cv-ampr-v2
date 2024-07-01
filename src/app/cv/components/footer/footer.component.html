@@ -1,9 +1,9 @@
-<footer class="bg-black text-white">
+<footer class="bg-black text-white" *transloco="let t; prefix: 'footer'">
   <section class="grid grid-flow-row lg:grid-flow-col w-screen p-5">
     <div class="p-5 mx-4">
-      <h1 class="text-5xl pb-3">Trabajemos juntos</h1>
+      <h1 class="text-5xl pb-3">{{ t("work") | transloco }}</h1>
       <h2 class="text-xl">
-        Desde España |
+        {{ t("based") | transloco }} |
         <a href="https://github.com/AngelPereiraR" class="mx-4">
           <i
             class="fa-brands fa-github fa-lg transition-all duration-500 hover:scale-110"
@@ -22,7 +22,7 @@
     <div
       class="p-5 m-4 border border-white rounded transition-all duration-500 hover:scale-105"
     >
-      <h2 class="text-3xl pb-3">¿Buscas a un desarrollador fullstack?</h2>
+      <h2 class="text-3xl pb-3">{{ t("developer") | transloco }}</h2>
       <div class="flex justify-between">
         <h2 class="text-xl text-green-400">ampr2003&#64;gmail.com</h2>
         <a
@@ -35,7 +35,7 @@
     <div
       class="p-5 m-4 border border-white rounded transition-all duration-500 hover:scale-105"
     >
-      <h2 class="text-3xl pb-3">¿Quieres conocerme en más profundidad?</h2>
+      <h2 class="text-3xl pb-3">{{ t("in-depth") | transloco }}</h2>
       <div class="flex justify-between">
         <h2 class="text-xl text-green-400">+34 636 16 08 17</h2>
         <a

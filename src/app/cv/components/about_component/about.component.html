@@ -1,24 +1,28 @@
-<section class="pb-20 px-10 xl:p-20 2xl:px-52">
+<section
+  class="pb-20 px-10 xl:p-20 2xl:px-52"
+  *transloco="let t; prefix: 'about'"
+>
   <div>
     <header>
-      <span class="text-xl font-bold text-green-600 pb-3 lg:pb-0 tracking-wide"
-        >Hola, soy</span
+      <span
+        class="text-xl font-bold text-green-600 pb-3 lg:pb-0 tracking-wide"
+        >{{ t("i'm") | transloco }}</span
       >
       <h1
         class="text-5xl 2xl:text-7xl font-bold capitalize pb-3 lg:pb-5 tracking-wide"
       >
-        Ángel Pereira, desarrollador fullstack y Qlik
+        {{ t("description") | transloco }}
       </h1>
-      <h2 class="text-2xl pb-3 lg:pb-5 font-semibold">Desde España</h2>
+      <h2 class="text-2xl pb-3 lg:pb-5 font-semibold">
+        {{ t("based") | transloco }}
+      </h2>
       <h2 class="text-4xl pb-3 lg:pb-5 font-semibold text-green-600">
-        2 años realizando proyectos
+        {{ t("experience") | transloco }}
       </h2>
     </header>
     <div class="my-7">
       <p class="text-lg tracking-wide leading-6">
-        Soy un desarrollador español que crea aplicaciones que resuelven
-        necesidades de clientes. También tengo experiencia dentro del mundo de
-        la Inteligencia de Negocio.
+        {{ t("info") | transloco }}
       </p>
     </div>
     <div class="flex">
@@ -26,7 +30,7 @@
         class="p-5 bg-black text-white hover:bg-white hover:text-black border-2 border-black rounded-lg font-bold transition-all duration-500"
         href="assets/CV-ampr.pdf"
         target="_blank"
-        >Descarga mi CV aquí
+        >{{ t("cv") | transloco }}
         <i class="fa-solid fa-arrow-up rotate-45 px-2 text-green-600"></i
       ></a>
     </div>

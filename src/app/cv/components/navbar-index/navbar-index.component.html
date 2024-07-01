@@ -1,4 +1,4 @@
-<header>
+<header *transloco="let t; prefix: 'navbar'">
   <nav
     class="fixed z-50 top-0 p-3 flex flex-row w-full items-center text-center bg-blue-800 text-white"
   >
@@ -23,27 +23,27 @@
       <li
         class="px-3 text-sm md:text-base xl:text-lg font-bold hover:text-green-200 transition-all"
       >
-        <a href="#home">Home</a>
+        <a href="#home">{{ t("home") | transloco }}</a>
       </li>
       <li
         class="px-3 text-sm md:text-base xl:text-lg font-bold hover:text-green-200 transition-all"
       >
-        <a href="#services">Servicios</a>
+        <a href="#services">{{ t("services") | transloco }}</a>
       </li>
       <li
         class="px-3 text-sm md:text-base xl:text-lg font-bold hover:text-green-200 transition-all"
       >
-        <a href="#about">Sobre mí</a>
+        <a href="#about">{{ t("about") | transloco }}</a>
       </li>
       <li
         class="px-3 text-sm md:text-base xl:text-lg font-bold hover:text-green-200 transition-all"
       >
-        <a href="#resume">Resumen</a>
+        <a href="#resume">{{ t("resume") | transloco }}</a>
       </li>
       <li
         class="px-3 text-sm md:text-base xl:text-lg font-bold hover:text-green-200 transition-all"
       >
-        <a href="#projects">Proyectos</a>
+        <a href="#projects">{{ t("projects") | transloco }}</a>
       </li>
     </ul>
     <ul class="flex flex-row ml-auto items-center">

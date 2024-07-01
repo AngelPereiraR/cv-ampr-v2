@@ -1,13 +1,16 @@
-<section class="py-20 px-10 xl:p-20 2xl:px-52">
+<section
+  class="py-20 px-10 xl:p-20 2xl:px-52"
+  *transloco="let t; prefix: 'services'"
+>
   <header class="grid grid-flow-row lg:grid-flow-col">
     <div class="grid grid-flow-row mr-20">
       <h1
         class="text-lg font-bold text-green-600 pb-3 lg:pb-0 tracking-wide leading-6"
       >
-        Servicios
+        {{ t("services") | transloco }}
       </h1>
       <h2 class="text-5xl 2xl:text-7xl font-bold pb-3 lg:pb-0 tracking-wide">
-        Mis especialidades
+        {{ t("specialties") | transloco }}
       </h2>
     </div>
   </header>
@@ -40,7 +43,7 @@
         src="assets/icons8-smartphone-100.webp"
         alt="Aplicaciones móviles"
       />
-      <div>Aplicaciones móviles</div>
+      <div>{{ t("mobile") | transloco }}</div>
     </div>
     <div
       class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500"
@@ -50,12 +53,12 @@
         src="assets/icons8-database-100.webp"
         alt="Bases de datos"
       />
-      <div>Bases de datos</div>
+      <div>{{ t("databases") | transloco }}</div>
     </div>
     <div
       class="grid-cols-2 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-white hover:text-green-600 bg-black rounded-xl hover:shadow-lg shadow-gray-700 hover:scale-110 transition-all duration-500"
     >
-      <h3 class="text-green-600">Saluda</h3>
+      <h3 class="text-green-600">{{ t("hello") | transloco }}</h3>
       <a href="mailto:ampr2003@gmail.com">
         ampr2003&#64;gmail.com
         <i class="fa-solid fa-arrow-up rotate-45 px-2 text-green-600"></i>
