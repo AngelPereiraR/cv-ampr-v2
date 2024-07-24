@@ -24,7 +24,8 @@
   },
   "about": {
     "i'm": "Hola, soy",
-    "description": "Ángel Pereira, desarrollador fullstack y Qlik",
+    "description-1": "Ángel Pereira",
+    "description-2": "desarrollador fullstack y Qlik",
     "based": "Desde España",
     "experience": "2 años realizando proyectos",
     "info": "Soy un desarrollador español que crea aplicaciones que resuelven necesidades de clientes. También tengo experiencia dentro del mundo de la Inteligencia de Negocio.",

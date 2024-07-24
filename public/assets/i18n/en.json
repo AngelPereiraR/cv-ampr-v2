@@ -24,7 +24,8 @@
   },
   "about": {
     "i'm": "Hi, I'm",
-    "description": "Ángel Pereira, Fullstack & Qlik Developer",
+    "description-1": "Ángel Pereira",
+    "description-2": "Fullstack & Qlik Developer",
     "based": "Based in Spain",
     "experience": "2 years developing",
     "info": "I am a Spanish developer who creates applications that solve customer needs. I also have experience within the world of Business Intelligence.",
