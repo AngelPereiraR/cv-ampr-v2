@@ -27,7 +27,7 @@ export class ProjectComponent implements OnInit {
       ['assets/frutyfest.webp'],
       ['Angular', 'NestJS'],
       'https://github.com/AngelPereiraR/frutyfest-web',
-      'https://frutyfest.netlify.app/'
+      'https://project-frutyfest.netlify.app/'
     ),
     new Project(
       2,
@@ -42,7 +42,7 @@ export class ProjectComponent implements OnInit {
         'assets/projects/gestion-empresas/06-make-order.webp',
       ],
       ['Flutter', 'Java (Spring)'],
-      'https://github.com/AngelPereiraR/frutyfest-web',
+      'https://github.com/AngelPereiraR/business_management_frontend',
       'assets/gestion-empresas.apk'
     ),
     new Project(
