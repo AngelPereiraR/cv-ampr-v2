@@ -31,6 +31,15 @@ export class ProjectComponent implements OnInit {
     ),
     new Project(
       2,
+      'Dulce Blog',
+      [1, 2, 3, 4],
+      ['assets/dulceblog.webp'],
+      ['Angular', 'ExpressJS'],
+      'https://github.com/AngelPereiraR/dulce_blog_web',
+      'https://dulce-blog.netlify.app/'
+    ),
+    new Project(
+      3,
       'Gestión Empresas',
       [1, 2, 3, 4, 5],
       [
@@ -46,14 +55,14 @@ export class ProjectComponent implements OnInit {
       'assets/gestion-empresas.apk'
     ),
     new Project(
-      3,
+      4,
       'SalesIn',
       [1, 2, 3, 4, 5],
       ['assets/salesin.webp'],
       ['Laravel']
     ),
     new Project(
-      4,
+      5,
       'GestionCursos',
       [1, 2, 3],
       ['assets/gestioncursos.webp'],
@@ -61,7 +70,7 @@ export class ProjectComponent implements OnInit {
       'https://github.com/AngelPereiraR/gestioncursos'
     ),
     new Project(
-      5,
+      6,
       'Almagest',
       [1, 2, 3, 4],
       ['assets/almagest.webp'],

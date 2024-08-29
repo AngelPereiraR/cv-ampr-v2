@@ -85,25 +85,31 @@
       "line-4": "During the event, administrators rate each game mode according to the established rules."
     },
     "project-2": {
+      "line-1": "Client blog.",
+      "line-2": "On the index screen you see the latest post.",
+      "line-3": "There is also an archive with all available articles divided by categories and subcategories. There is also a search engine to find specific articles.",
+      "line-4": "A music player is available where a song will play on loop."
+    },
+    "project-3": {
       "line-1": "The project is an application that simplifies catalog management for companies and allows customers to place orders interactively.",
       "line-2": "For companies, it offers login and catalog management functions, viewing with filters, and managing customer suggestions.",
       "line-3": "Customers, after registration and validation, explore catalogs, manage a cart, give suggestions, and place orders with additional confirmation.",
       "line-4": "The administrator controls user management, company data, products, categories, suggestions, and orders, having total control over the application.",
       "line-5": "In summary, it improves interaction and efficiency in order management between companies and customers."
     },
-    "project-3": {
+    "project-4": {
       "line-1": "It is a website that has an administration and user system.",
       "line-2": "Users must register to access the content of the website.",
       "line-3": "The administrator is responsible for adding offers and articles.",
       "line-4": "Users can view the available offers and apply to them.",
       "line-5": "After applying, they have the option to generate a PDF with the offers they have applied to, which they can send by email or download directly."
     },
-    "project-4": {
+    "project-5": {
       "line-1": "It is a website that involves an administrator, teachers, and students.",
       "line-2": "Teachers have the ability to create news and evaluate students who are enrolled in their courses.",
       "line-3": "Students can enroll in any teacher's courses and view the corresponding grades."
     },
-    "project-5": {
+    "project-6": {
       "line-1": "It is a mobile application developed in Flutter that allows wholesale companies to add products to a database and assign prices to them.",
       "line-2": "In addition, retail companies can register as users to place orders with wholesale companies.",
       "line-3": "Laravel API created by a DAM professor (Abandoned).",

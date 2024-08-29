@@ -85,25 +85,31 @@
       "line-4": "Durante el evento, los administradores califican cada modo de juego según las reglas establecidas."
     },
     "project-2": {
+      "line-1": "Blog de un cliente.",
+      "line-2": "En la pantalla inicial se ve la última publicación.",
+      "line-3": "También se dispone un archivo con todos los artículos disponibles divididos por categorías y subcategorías. A su vez, hay disponible un buscador para encontrar artículos en concreto.",
+      "line-4": "Hay disponible un reproductor de música en el que sonará una canción en bucle."
+    },
+    "project-3": {
       "line-1": "El proyecto es una aplicación que simplifica la gestión de catálogos para empresas y permite a los clientes hacer pedidos de forma interactiva.",
       "line-2": "Para empresas, ofrece funciones de inicio de sesión y gestión de catálogo, visualización con filtros y gestión de sugerencias de clientes.",
       "line-3": "Los clientes, tras registro y validación, exploran catálogos, gestionan un carrito, dan sugerencias y generan pedidos con confirmación adicional.",
       "line-4": "El administrador controla la gestión de usuarios, datos de empresas, productos, categorías, sugerencias y pedidos, teniendo un control total sobre la aplicación.",
       "line-5": "En resumen, mejora la interacción y eficiencia en la gestión de pedidos entre empresas y clientes."
     },
-    "project-3": {
+    "project-4": {
       "line-1": "Se trata de una página web que cuenta con un sistema de administración y usuarios.",
       "line-2": "Los usuarios deben registrarse para acceder al contenido de la página.",
       "line-3": "El administrador tiene la responsabilidad de agregar ofertas y artículos.",
       "line-4": "Los usuarios pueden visualizar las ofertas disponibles y aplicar a ellas.",
       "line-5": "Después de aplicar, tienen la opción de generar un PDF con las ofertas a las que han aplicado, el cual pueden enviar por correo electrónico o descargar directamente."
     },
-    "project-4": {
+    "project-5": {
       "line-1": "Es una página web que involucra a un administrador, profesores y alumnos.",
       "line-2": "Los profesores tienen la capacidad de crear noticias y evaluar a los alumnos que están inscritos en sus asignaturas.",
       "line-3": "Los alumnos pueden inscribirse en las asignaturas de cualquier profesor y visualizar las calificaciones correspondientes."
     },
-    "project-5": {
+    "project-6": {
       "line-1": "Es una aplicación móvil desarrollada en Flutter que permite a empresas mayoristas agregar productos a una base de datos y asignarles precios.",
       "line-2": "Además, empresas minoristas pueden registrarse como usuarios para realizar pedidos a las empresas mayoristas.",
       "line-3": "API de Laravel realizada por un profesor de DAM (Abandonado).",
