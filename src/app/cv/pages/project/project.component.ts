@@ -22,21 +22,21 @@ export class ProjectComponent implements OnInit {
   public projects: Project[] = [
     new Project(
       1,
-      'FrutyFest',
-      [1, 2, 3, 4],
-      ['assets/frutyfest.webp'],
-      ['Angular', 'NestJS'],
-      'https://github.com/AngelPereiraR/frutyfest-web',
-      'https://project-frutyfest.netlify.app/'
-    ),
-    new Project(
-      2,
       'Dulce Blog',
       [1, 2, 3, 4],
       ['assets/dulceblog.webp'],
       ['Angular', 'ExpressJS'],
       'https://github.com/AngelPereiraR/dulce_blog_web',
       'https://dulce-blog.netlify.app/'
+    ),
+    new Project(
+      2,
+      'FrutyFest',
+      [1, 2, 3, 4],
+      ['assets/frutyfest.webp'],
+      ['Angular', 'NestJS'],
+      'https://github.com/AngelPereiraR/frutyfest-web',
+      'https://project-frutyfest.netlify.app/'
     ),
     new Project(
       3,

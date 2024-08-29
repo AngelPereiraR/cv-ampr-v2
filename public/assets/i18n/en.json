@@ -79,16 +79,16 @@
       "principal": "Go to Main Page"
     },
     "project-1": {
-      "line-1": "The FrutyFest website, an event organized by ByFruty, a Twitch streamer and YouTuber, provides information about past and future editions of the event.",
-      "line-2": "It features a table with selected participants and a ranking based on the scores obtained.",
-      "line-3": "To participate, users must register and be selected by an administrator, who can also manage teams and game modes in the database.",
-      "line-4": "During the event, administrators rate each game mode according to the established rules."
-    },
-    "project-2": {
       "line-1": "Client blog.",
       "line-2": "On the index screen you see the latest post.",
       "line-3": "There is also an archive with all available articles divided by categories and subcategories. There is also a search engine to find specific articles.",
       "line-4": "A music player is available where a song will play on loop."
+    },
+    "project-2": {
+      "line-1": "The FrutyFest website, an event organized by ByFruty, a Twitch streamer and YouTuber, provides information about past and future editions of the event.",
+      "line-2": "It features a table with selected participants and a ranking based on the scores obtained.",
+      "line-3": "To participate, users must register and be selected by an administrator, who can also manage teams and game modes in the database.",
+      "line-4": "During the event, administrators rate each game mode according to the established rules."
     },
     "project-3": {
       "line-1": "The project is an application that simplifies catalog management for companies and allows customers to place orders interactively.",
