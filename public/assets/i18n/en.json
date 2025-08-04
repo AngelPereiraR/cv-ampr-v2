@@ -25,9 +25,9 @@
   "about": {
     "i'm": "Hi, I'm",
     "description-1": "Ángel Pereira",
-    "description-2": "Fullstack & Qlik Developer",
+    "description-2": "Junior Developer | DAM & DAW | Based in Spain",
     "based": "Based in Spain",
-    "experience": "2 years developing",
+    "experience": "4 years developing",
     "info": "I am a Spanish developer who creates applications that solve customer needs. I also have experience within the world of Business Intelligence.",
     "cv": "Download my CV here"
   },
@@ -44,16 +44,18 @@
       "telephone": "Telephone",
       "email": "Email",
       "experience": "Experience",
-      "experience-definition": "2 years developing",
+      "experience-definition": "4 years developing",
       "languages": "Languages",
       "languages-definition": "Native Spanish, B2 English Cambridge"
     },
     "experience": {
       "title": "Experience",
-      "first-experience-time": "11/2023 - now",
-      "first-experience-title": "Fullstack developer",
-      "second-experience-time": "03/2023 - 06/2023 · 4 months",
-      "second-experience-title": "Qlik Sense Developer Intern"
+      "first-experience-time": "09/2024 - 06/2025 · 10 months",
+      "first-experience-title": "Mobile Fullstack Developer Intern",
+      "second-experience-time": "11/2023 - 09/2024 · 11 months",
+      "second-experience-title": "Fullstack developer",
+      "third-experience-time": "03/2023 - 06/2023 · 4 months",
+      "third-experience-title": "Qlik Sense Developer Intern"
     },
     "education": {
       "title": "Education",

@@ -8,7 +8,7 @@
   },
   "home": {
     "i'm": "Hola, Soy",
-    "description": "Desarrollador Fullstack y Qlik | Desde España",
+    "description": "Desarrollador Júnior | DAM & DAW | Desde España",
     "talk": "Hablemos",
     "work": "Mis proyectos",
     "cv": "Descargar mi CV",
@@ -25,9 +25,9 @@
   "about": {
     "i'm": "Hola, soy",
     "description-1": "Ángel Pereira",
-    "description-2": "desarrollador fullstack y Qlik",
+    "description-2": "Desarrollador Júnior",
     "based": "Desde España",
-    "experience": "2 años realizando proyectos",
+    "experience": "4 años realizando proyectos",
     "info": "Soy un desarrollador español que crea aplicaciones que resuelven necesidades de clientes. También tengo experiencia dentro del mundo de la Inteligencia de Negocio.",
     "cv": "Descarga mi CV aquí"
   },
@@ -44,16 +44,18 @@
       "telephone": "Teléfono",
       "email": "Correo",
       "experience": "Experiencia",
-      "experience-definition": "2 años haciendo proyectos",
+      "experience-definition": "4 años haciendo proyectos",
       "languages": "Idiomas",
       "languages-definition": "Español nativo, Inglés B2 Cambridge"
     },
     "experience": {
       "title": "Experiencia",
-      "first-experience-time": "11/2023 - actualidad",
-      "first-experience-title": "Desarrollador Fullstack",
-      "second-experience-time": "03/2023 - 06/2023 · 4 meses",
-      "second-experience-title": "Desarrollador Qlik Sense en prácticas"
+      "first-experience-time": "09/2024 - 06/2025 · 10 meses",
+      "first-experience-title": "Desarrollador Fullstack móvil en prácticas",
+      "second-experience-time": "11/2023 - 09/2024 · 11 meses",
+      "second-experience-title": "Desarrollador Fullstack",
+      "third-experience-time": "03/2023 - 06/2023 · 4 meses",
+      "third-experience-title": "Desarrollador Qlik Sense en prácticas"
     },
     "education": {
       "title": "Educación",
