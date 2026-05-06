@@ -20,15 +20,17 @@
     "specialties": "My specialties",
     "mobile": "Mobile apps",
     "databases": "Databases",
+    "bigdata": "Big Data",
+    "ai": "Artificial Intelligence",
     "hello": "Say hello"
   },
   "about": {
     "i'm": "Hi, I'm",
     "description-1": "Ángel Pereira",
-    "description-2": "Junior Developer | DAM & DAW | Based in Spain",
+    "description-2": "Junior Full Stack & Mobile Developer",
     "based": "Based in Spain",
-    "experience": "4 years developing",
-    "info": "I am a Spanish developer who creates applications that solve customer needs. I also have experience within the world of Business Intelligence.",
+    "experience": "5 years developing",
+    "info": "Full Stack and Mobile Developer with real experience in professional environments and personal projects. Versatile in front-end, back-end, mobile, big data and artificial intelligence, with the ability to adapt to different roles and technologies.",
     "cv": "Download my CV here"
   },
   "resume": {
@@ -37,39 +39,50 @@
     "about": {
       "title": "About me",
       "subtitle": "Based in Spain",
-      "description": "Ángel Manuel Pereira Rodríguez, Fullstack and Qlik developer, from Spain. I am a Spanish developer who creates applications that solve customer needs. I also have experience within the world of Business Intelligence.",
+      "description": "Ángel Manuel Pereira Rodríguez, Full Stack and Mobile Developer with real experience in professional environments and personal projects. Versatile in front-end, back-end, mobile, big data and artificial intelligence, with the ability to adapt to different roles and technologies.",
       "name": "Name",
       "nacionality": "Nacionality",
       "country": "Spain",
       "telephone": "Telephone",
       "email": "Email",
       "experience": "Experience",
-      "experience-definition": "4 years developing",
+      "experience-definition": "5 years developing",
       "languages": "Languages",
       "languages-definition": "Native Spanish, B2 English Cambridge"
     },
     "experience": {
       "title": "Experience",
       "first-experience-time": "09/2024 - 06/2025 · 10 months",
-      "first-experience-title": "Mobile Fullstack Developer Intern",
+      "first-experience-title": "Full Stack & Mobile Developer",
       "second-experience-time": "11/2023 - 09/2024 · 11 months",
-      "second-experience-title": "Fullstack developer",
+      "second-experience-title": "Freelance Developer",
       "third-experience-time": "03/2023 - 06/2023 · 4 months",
       "third-experience-title": "Qlik Sense Developer Intern"
     },
     "education": {
       "title": "Education",
       "hours": "hours",
-      "ignacio": "San Ignacio Concerted Teaching Center - Cádiz, Spain"
+      "ignacio": "San Ignacio Concerted Teaching Center - Cádiz, Spain",
+      "ia-specialization-title": "Specialization Course in Artificial Intelligence and Big Data (600h)",
+      "fernando-aguilar": "I.E.S. Fernando Aguilar Quignon - Cádiz, Spain"
     },
     "skills": {
-      "title": "Skills"
+      "title": "Skills",
+      "languages": "Languages",
+      "frontend": "Front-End & Mobile",
+      "backend": "Back-End",
+      "databases": "Databases",
+      "devops": "DevOps & Tools",
+      "bigdata": "Big Data",
+      "bierp": "BI & ERP"
     }
   },
   "projects": {
     "index-title": "My Recent Projects",
     "see-all": "See All Projects",
     "projects-title": "My Projects",
+    "clear-filters": "Clear filters",
+    "no-projects-found": "No projects found with the selected technologies",
     "description": "Description",
     "technologies": "Technologies",
     "links": {

@@ -20,15 +20,17 @@
     "specialties": "Mis especialidades",
     "mobile": "Aplicaciones móviles",
     "databases": "Bases de datos",
+    "bigdata": "Big Data",
+    "ai": "Inteligencia Artificial",
     "hello": "Saluda"
   },
   "about": {
     "i'm": "Hola, soy",
     "description-1": "Ángel Pereira",
-    "description-2": "Desarrollador Júnior",
+    "description-2": "Desarrollador Full Stack & Mobile Júnior",
     "based": "Desde España",
-    "experience": "4 años realizando proyectos",
-    "info": "Soy un desarrollador español que crea aplicaciones que resuelven necesidades de clientes. También tengo experiencia dentro del mundo de la Inteligencia de Negocio.",
+    "experience": "5 años realizando proyectos",
+    "info": "Desarrollador Full Stack y Mobile con experiencia real en entornos laborales y proyectos propios. Versátil en front-end, back-end, mobile, big data e inteligencia artificial, con capacidad para adaptarme a distintos roles y tecnologías.",
     "cv": "Descarga mi CV aquí"
   },
   "resume": {
@@ -37,39 +39,50 @@
     "about": {
       "title": "Sobre mí",
       "subtitle": "Desde España",
-      "description": "Ángel Manuel Pereira Rodríguez, desarrollador Fullstack y Qlik, desde España. Soy un desarrollador español que crea aplicaciones que resuelven necesidades de clientes. También tengo experiencia dentro del mundo de la Inteligencia de Negocio.",
+      "description": "Ángel Manuel Pereira Rodríguez, desarrollador Full Stack y Mobile con experiencia real en entornos laborales y proyectos propios. Versátil en front-end, back-end, mobile, big data e inteligencia artificial, con capacidad para adaptarme a distintos roles y tecnologías.",
       "name": "Nombre",
       "nacionality": "Nacionalidad",
       "country": "España",
       "telephone": "Teléfono",
       "email": "Correo",
       "experience": "Experiencia",
-      "experience-definition": "4 años haciendo proyectos",
+      "experience-definition": "5 años haciendo proyectos",
       "languages": "Idiomas",
       "languages-definition": "Español nativo, Inglés B2 Cambridge"
     },
     "experience": {
       "title": "Experiencia",
       "first-experience-time": "09/2024 - 06/2025 · 10 meses",
-      "first-experience-title": "Desarrollador Fullstack móvil en prácticas",
+      "first-experience-title": "Desarrollador Full Stack & Mobile",
       "second-experience-time": "11/2023 - 09/2024 · 11 meses",
-      "second-experience-title": "Desarrollador Fullstack",
+      "second-experience-title": "Desarrollador Freelance",
       "third-experience-time": "03/2023 - 06/2023 · 4 meses",
       "third-experience-title": "Desarrollador Qlik Sense en prácticas"
     },
     "education": {
       "title": "Educación",
       "hours": "horas",
-      "ignacio": "Centro Concertado de Enseñanza San Ignacio - Cádiz, España"
+      "ignacio": "Centro Concertado de Enseñanza San Ignacio - Cádiz, España",
+      "ia-specialization-title": "Curso de especialización en Inteligencia Artificial y Big Data (600h)",
+      "fernando-aguilar": "I.E.S. Fernando Aguilar Quignon - Cádiz, España"
     },
     "skills": {
-      "title": "Habilidades"
+      "title": "Habilidades",
+      "languages": "Lenguajes",
+      "frontend": "Front-End & Mobile",
+      "backend": "Back-End",
+      "databases": "Bases de Datos",
+      "devops": "DevOps & Herramientas",
+      "bigdata": "Big Data",
+      "bierp": "BI & ERP"
     }
   },
   "projects": {
     "index-title": "Mis proyectos recientes",
     "see-all": "Ver todos los proyectos",
     "projects-title": "Mis proyectos",
+    "clear-filters": "Limpiar filtros",
+    "no-projects-found": "No se encontraron proyectos con las tecnologías seleccionadas",
     "description": "Descripción",
     "technologies": "Tecnologías",
     "links": {

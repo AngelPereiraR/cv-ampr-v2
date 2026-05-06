@@ -173,7 +173,7 @@
             {{ t("experience.first-experience-time") | transloco }}
           </p>
           <h4 class="text-sm lg:text-xl font-semibold mb-2">
-            Sipos by Pikotea
+            Pikotea
           </h4>
           <h3 class="text-base lg:text-2xl font-bold">
             {{ t("experience.first-experience-title") | transloco }}
@@ -185,7 +185,7 @@
           <p class="text-xs lg:text-base mb-2">
             {{ t("experience.second-experience-time") | transloco }}
           </p>
-          <h4 class="text-sm lg:text-xl font-semibold mb-2">Dev</h4>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">Freelance</h4>
           <h3 class="text-base lg:text-2xl font-bold">
             {{ t("experience.second-experience-title") | transloco }}
           </h3>
@@ -213,6 +213,17 @@
         {{ t("education.title") | transloco }}
       </h2>
       <div class="grid grid-flow-row grid-cols-2 mt-5">
+        <div
+          class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
+        >
+          <p class="text-xs lg:text-base mb-2">2025 - 2026</p>
+          <h4 class="text-sm lg:text-xl font-semibold mb-2">
+            {{ t("education.fernando-aguilar") | transloco }}
+          </h4>
+          <h3 class="text-base lg:text-2xl font-bold">
+            {{ t("education.ia-specialization-title") | transloco }}
+          </h3>
+        </div>
         <div
           class="p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
         >
@@ -297,8 +308,7 @@
             {{ t("education.ignacio") | transloco }}
           </h4>
           <h3 class="text-base lg:text-2xl font-bold">
-            Titulo Bachillerato de Ciencias Tecnológico (2000
-            {{ t("education.hours") | transloco }})
+            Título de Bachillerato de Ciencias Tecnológico
           </h3>
         </div>
       </div>
@@ -312,293 +322,247 @@
       <h2 class="text-3xl font-semibold">
         {{ t("skills.title") | transloco }}
       </h2>
-      <div>
-        <div
-          class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-5 mt-5"
-        >
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/html-1.svg"
-              alt="HTML"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">HTML</h3>
+      <div class="space-y-8">
+        <!-- Languages -->
+        <div>
+          <h3 class="text-xl font-bold text-green-600 mb-2">{{ t("skills.languages") | transloco }}</h3>
+          <div class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/javascript-1.svg" alt="JavaScript" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">JavaScript</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/typescript.svg" alt="TypeScript" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">TypeScript</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/python-5.svg" alt="Python" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Python</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/java-4.svg" alt="Java" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Java</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/r.svg" alt="R" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">R</h3>
+            </div>
           </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/css-3.svg"
-              alt="CSS"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">CSS</h3>
+        </div>
+        <!-- Front-End & Mobile -->
+        <div>
+          <h3 class="text-xl font-bold text-green-600 mb-2">{{ t("skills.frontend") | transloco }}</h3>
+          <div class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/html-1.svg" alt="HTML" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">HTML</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/css-3.svg" alt="CSS" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">CSS</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/scss.svg" alt="SCSS" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">SCSS</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/angular-icon-1.svg" alt="Angular" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Angular</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/react.svg" alt="React" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">React</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/vue.webp" alt="Vue.js" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Vue.js</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/vitejs.svg" alt="ViteJS" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">ViteJS</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/flutter.svg" alt="Flutter" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Flutter</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/rss.svg" alt="RSS" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">RSS</h3>
+            </div>
           </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img class="p-2 h-20" src="assets/tecnologies/rss.svg" alt="RSS" />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">RSS</h3>
+        </div>
+        <!-- Back-End -->
+        <div>
+          <h3 class="text-xl font-bold text-green-600 mb-2">{{ t("skills.backend") | transloco }}</h3>
+          <div class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/nodejs.svg" alt="Node JS" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Node JS</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/expressjs.webp" alt="Express.js" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Express.js</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/nestjs.svg" alt="NestJS" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">NestJS</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/spring-3.svg" alt="Spring Boot" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Spring</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/laravel-2.svg" alt="Laravel" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Laravel</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/django.svg" alt="Django" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Django</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/flask.svg" alt="Flask" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Flask</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/fastapi.svg" alt="FastAPI" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">FastAPI</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/xml-2.svg" alt="XML" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">XML</h3>
+            </div>
           </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/java-4.svg"
-              alt="Java"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Java</h3>
+        </div>
+        <!-- Databases -->
+        <div>
+          <h3 class="text-xl font-bold text-green-600 mb-2">{{ t("skills.databases") | transloco }}</h3>
+          <div class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/mysql-logo.svg" alt="MySQL" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">MySQL</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/postgresql-wordmark.svg" alt="PostgreSQL" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">PostgreSQL</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/sqlite.svg" alt="SQLite" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">SQLite</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/mongodb-icon-1.svg" alt="MongoDB" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">MongoDB</h3>
+            </div>
           </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/spring-3.svg"
-              alt="Spring Boot"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Spring</h3>
+        </div>
+        <!-- DevOps & Tools -->
+        <div>
+          <h3 class="text-xl font-bold text-green-600 mb-2">{{ t("skills.devops") | transloco }}</h3>
+          <div class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/docker.svg" alt="Docker" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Docker</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/github-icon-1.svg" alt="GitHub" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">GitHub</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/figma.svg" alt="Figma" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Figma</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/trello.svg" alt="Trello" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Trello</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/jira-wordmark.svg" alt="Jira" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Jira</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/jupyter.svg" alt="Jupyter" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Jupyter</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/aws.svg" alt="AWS" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">AWS</h3>
+            </div>
           </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/flutter.svg"
-              alt="Flutter"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Flutter</h3>
+        </div>
+        <!-- Big Data -->
+        <div>
+          <h3 class="text-xl font-bold text-green-600 mb-2">{{ t("skills.bigdata") | transloco }}</h3>
+          <div class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/hadoop-wordmark.svg" alt="Hadoop" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Hadoop</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/apachespark-wordmark.svg" alt="Spark" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Spark</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/apachekafka-wordmark.svg" alt="Kafka" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Kafka</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/Apache_Hive_logo.svg" alt="Hive" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Hive</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/Apache_Pig_Logo.svg" alt="Pig" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Pig</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/Apache_Sqoop_logo.svg" alt="Sqoop" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Sqoop</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/apache-wordmark.svg" alt="Flume" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Flume</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/Apache_ZooKeeper_logo.svg" alt="Zookeeper" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Zookeeper</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/Apache-nifi-logo.svg" alt="Nifi" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Nifi</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/dremio-logo-freelogovectors.net_.svg" alt="Dremio" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Dremio</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/prometheus.svg" alt="Prometheus" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Prometheus</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/grafana-wordmark.svg" alt="Grafana" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Grafana</h3>
+            </div>
           </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/laravel-2.svg"
-              alt="Laravel"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Laravel</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/python-5.svg"
-              alt="Python"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Python</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/django.svg"
-              alt="Django"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Django</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/xml-2.svg"
-              alt="XML"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">XML</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/qlik-1.svg"
-              alt="Qlik Sense"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">
-              Qlik Sense
-            </h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/mysql-logo.svg"
-              alt="MySQL"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">MySQL</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/mongodb-icon-1.svg"
-              alt="MongoDB"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">MongoDB</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/odoo.svg"
-              alt="Odoo"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Odoo</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/github-icon-1.svg"
-              alt="GitHub"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">GitHub</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/trello.svg"
-              alt="Trello"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Trello</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/javascript-1.svg"
-              alt="JavaScript"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">
-              JavaScript
-            </h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/vitejs.svg"
-              alt="ViteJS"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">ViteJS</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/typescript.svg"
-              alt="TypeScript"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">
-              TypeScript
-            </h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/angular-icon-1.svg"
-              alt="Angular"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Angular</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/nestjs.svg"
-              alt="NestJS"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">NestJS</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/docker.svg"
-              alt="Docker"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Docker</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/nodejs.svg"
-              alt="Node JS"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Node JS</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/expressjs.webp"
-              alt="Express.js"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">
-              Express.js
-            </h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/vue.webp"
-              alt="Vue.js"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Vue.js</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/figma.svg"
-              alt="Figma"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Figma</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/react.svg"
-              alt="React"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">React</h3>
-          </div>
-          <div
-            class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110"
-          >
-            <img
-              class="p-2 h-20"
-              src="assets/tecnologies/scss.svg"
-              alt="SCSS"
-            />
-            <h3 class="text-base lg:text-lg xl:text-2xl font-bold">SCSS</h3>
+        </div>
+        <!-- BI & ERP -->
+        <div>
+          <h3 class="text-xl font-bold text-green-600 mb-2">{{ t("skills.bierp") | transloco }}</h3>
+          <div class="grid grid-flow-row grid-cols-2 md:grid-cols-3 lg:grid-cols-5">
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/qlik-1.svg" alt="Qlik Sense" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Qlik Sense</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/microsoft-power-bi.svg" alt="Power BI" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Power BI</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/tableau.svg" alt="Tableau" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Tableau</h3>
+            </div>
+            <div class="flex flex-col justify-center items-center p-5 bg-gray-200 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 my-5 mr-5 transition-all duration-500 hover:scale-110">
+              <img class="p-2 h-20" src="assets/tecnologies/odoo.svg" alt="Odoo" />
+              <h3 class="text-base lg:text-lg xl:text-2xl font-bold">Odoo</h3>
+            </div>
           </div>
         </div>
       </div>
