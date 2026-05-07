@@ -16,7 +16,8 @@
   </header>
   <div class="grid grid-flow-row lg:grid-flow-col my-10">
     <div
-      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500"
+      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500 cursor-pointer"
+      (click)="goToProjects('backend')"
     >
       <span
         class="material-icons h-12 w-12 p-2 mb-5 bg-green-400 rounded-xl text-black text-3xl flex items-center justify-center"
@@ -25,7 +26,8 @@
       <h3>Backend</h3>
     </div>
     <div
-      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500"
+      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500 cursor-pointer"
+      (click)="goToProjects('frontend')"
     >
       <span
         class="material-icons h-12 w-12 p-2 mb-5 bg-green-400 rounded-xl text-black text-3xl flex items-center justify-center"
@@ -34,7 +36,8 @@
       <div>Frontend</div>
     </div>
     <div
-      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500"
+      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500 cursor-pointer"
+      (click)="goToProjects('mobile')"
     >
       <span
         class="material-icons h-12 w-12 p-2 mb-5 bg-green-400 rounded-xl text-black text-3xl flex items-center justify-center"
@@ -43,16 +46,8 @@
       <div>{{ t("mobile") | transloco }}</div>
     </div>
     <div
-      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500"
-    >
-      <span
-        class="material-icons h-12 w-12 p-2 mb-5 bg-green-400 rounded-xl text-black text-3xl flex items-center justify-center"
-        >storage</span
-      >
-      <div>{{ t("databases") | transloco }}</div>
-    </div>
-    <div
-      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500"
+      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500 cursor-pointer"
+      (click)="goToProjects('bigdata')"
     >
       <span
         class="material-icons h-12 w-12 p-2 mb-5 bg-green-400 rounded-xl text-black text-3xl flex items-center justify-center"
@@ -61,7 +56,8 @@
       <div>{{ t("bigdata") | transloco }}</div>
     </div>
     <div
-      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500"
+      class="grid-cols-1 mx-5 my-3 lg:my-0 lg:mx-2 p-10 font-medium text-black hover:text-green-600 bg-gray-300 hover:bg-white rounded-xl hover:shadow-2xl shadow-gray-700 hover:scale-110 transition-all duration-500 cursor-pointer"
+      (click)="goToProjects('ai')"
     >
       <span
         class="material-icons h-12 w-12 p-2 mb-5 bg-green-400 rounded-xl text-black text-3xl flex items-center justify-center"

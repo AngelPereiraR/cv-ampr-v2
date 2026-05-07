@@ -12,6 +12,7 @@ import { NavbarIndexComponent } from '../../components/navbar-index/navbar-index
   standalone: true,
   templateUrl: './index.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { class: 'flex flex-col flex-1' },
   imports: [
     CommonModule,
     HomeComponent,

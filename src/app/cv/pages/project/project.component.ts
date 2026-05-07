@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { NavbarGeneralComponent } from '../../components/navbar-general/navbar-general.component';
 import { Project } from 'src/app/classes/project';
 import { CarouselComponent } from '../../components/carousel/carousel.component';
@@ -17,6 +18,7 @@ import { TranslocoModule } from '@jsverse/transloco';
   ],
   templateUrl: './project.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { class: 'flex flex-col flex-1' },
 })
 export class ProjectComponent implements OnInit {
   public projects: Project[] = [
@@ -26,6 +28,7 @@ export class ProjectComponent implements OnInit {
       [1, 2, 3, 4],
       ['assets/dulceblog.webp'],
       ['Angular', 'ExpressJS'],
+      ['backend', 'frontend'],
       'https://github.com/AngelPereiraR/dulce_blog_web',
       'https://dulce-blog.netlify.app/'
     ),
@@ -35,6 +38,7 @@ export class ProjectComponent implements OnInit {
       [1, 2, 3, 4],
       ['assets/frutyfest.webp'],
       ['Angular', 'NestJS'],
+      ['backend', 'frontend'],
       'https://github.com/AngelPereiraR/frutyfest-web',
       'https://project-frutyfest.netlify.app/'
     ),
@@ -51,6 +55,7 @@ export class ProjectComponent implements OnInit {
         'assets/projects/gestion-empresas/06-make-order.webp',
       ],
       ['Flutter', 'Java (Spring)'],
+      ['backend', 'mobile'],
       'https://github.com/AngelPereiraR/business_management_frontend',
       'assets/gestion-empresas.apk'
     ),
@@ -59,7 +64,8 @@ export class ProjectComponent implements OnInit {
       'SalesIn',
       [1, 2, 3, 4, 5],
       ['assets/salesin.webp'],
-      ['Laravel']
+      ['Laravel'],
+      ['backend', 'frontend']
     ),
     new Project(
       5,
@@ -67,6 +73,7 @@ export class ProjectComponent implements OnInit {
       [1, 2, 3],
       ['assets/gestioncursos.webp'],
       ['Java (Spring)'],
+      ['backend', 'frontend'],
       'https://github.com/AngelPereiraR/gestioncursos'
     ),
     new Project(
@@ -75,18 +82,30 @@ export class ProjectComponent implements OnInit {
       [1, 2, 3, 4],
       ['assets/almagest.webp'],
       ['Flutter', 'Laravel'],
+      ['backend', 'mobile'],
       'https://github.com/AngelPereiraR/almagest'
     ),
   ];
 
   public selectedProject: Project | undefined;
+  public pdfSafeUrl: SafeResourceUrl | null = null;
 
-  constructor(private route: ActivatedRoute) {}
+  constructor(
+    private route: ActivatedRoute,
+    private sanitizer: DomSanitizer
+  ) {}
 
   ngOnInit(): void {
     this.route.paramMap.subscribe((params) => {
       const id = Number(params.get('id'));
-      this.selectedProject = this.projects.find((project) => project.id === id);
+      this.selectedProject = this.projects.find(
+        (project) => project.id === id
+      );
+      this.pdfSafeUrl = this.selectedProject?.pdfUrl
+        ? this.sanitizer.bypassSecurityTrustResourceUrl(
+            this.selectedProject.pdfUrl
+          )
+        : null;
     });
   }
 }

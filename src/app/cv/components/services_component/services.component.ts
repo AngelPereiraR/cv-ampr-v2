@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
+import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { Router } from '@angular/router';
 import { TranslocoModule } from '@jsverse/transloco';
 
 @Component({
@@ -9,6 +10,12 @@ import { TranslocoModule } from '@jsverse/transloco';
   templateUrl: './services.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class ServicesComponent implements OnInit {
-  ngOnInit(): void {}
+export class ServicesComponent {
+  constructor(private router: Router) {}
+
+  public goToProjects(service: string): void {
+    this.router.navigate(['/projects'], {
+      queryParams: { service },
+    });
+  }
 }

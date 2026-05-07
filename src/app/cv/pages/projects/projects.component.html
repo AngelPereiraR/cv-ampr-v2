@@ -1,7 +1,7 @@
 <app-navbar-general></app-navbar-general>
 
-<main *transloco="let t; prefix: 'projects'">
-  <section class="p-10 py-32 xl:px-20 2xl:px-52 bg-green-200">
+<main *transloco="let t; prefix: 'projects'" class="flex flex-col flex-1">
+  <section class="flex flex-col flex-1 p-10 py-32 xl:px-20 2xl:px-52 bg-green-200">
     <div>
       <header class="flex flex-col justify-between items-center">
         <h1 class="text-lg font-bold text-green-600 pb-3 lg:pb-0">Portfolio</h1>
@@ -11,29 +11,84 @@
       </header>
 
       <div
-        class="flex flex-wrap justify-center gap-3 mt-10"
-        *ngIf="availableTechnologies.length > 0"
+        *ngIf="availableServices.length > 0 || availableTechnologies.length > 0"
+        class="mt-10 bg-white/60 rounded-2xl px-8 py-6 border border-green-200 max-w-3xl mx-auto"
       >
-        <button
-          *ngFor="let tech of availableTechnologies"
-          (click)="toggleTechnology(tech)"
-          [class.bg-green-600]="selectedTechnologies.includes(tech)"
-          [class.text-white]="selectedTechnologies.includes(tech)"
-          [class.border-green-600]="selectedTechnologies.includes(tech)"
-          [class.hover:bg-black]="!selectedTechnologies.includes(tech)"
-          [class.hover:text-white]="!selectedTechnologies.includes(tech)"
-          class="rounded-2xl px-4 py-2 border-2 border-black font-medium transition-all duration-500 cursor-pointer"
-        >
-          {{ tech }}
-        </button>
-        <button
-          *ngIf="selectedTechnologies.length > 0"
-          (click)="clearFilters()"
-          class="rounded-2xl px-4 py-2 border-2 border-black font-medium transition-all duration-500 cursor-pointer hover:bg-black hover:text-white flex items-center gap-1"
-        >
-          <span class="material-icons text-base" style="vertical-align: middle">close</span>
-          {{ t("clear-filters") }}
-        </button>
+        <div *ngIf="availableServices.length > 0">
+          <div class="flex items-center justify-center gap-2 mb-4">
+            <span class="material-icons text-green-600 text-lg">category</span>
+            <span class="text-sm font-semibold text-green-700 uppercase tracking-wider">{{ t("filter-by-service") | transloco }}</span>
+          </div>
+          <div class="flex flex-wrap justify-center gap-2">
+            <button
+              (click)="setService(null)"
+              [class.bg-green-600]="activeService === null"
+              [class.text-white]="activeService === null"
+              [class.border-green-600]="activeService === null"
+              [class.shadow-md]="activeService === null"
+              [class.bg-transparent]="activeService !== null"
+              [class.text-gray-600]="activeService !== null"
+              [class.border-gray-400]="activeService !== null"
+              [class.hover:bg-gray-100]="activeService !== null"
+              [class.hover:border-gray-600]="activeService !== null"
+              class="rounded-full px-5 py-2 border-2 font-semibold text-sm transition-all duration-300 cursor-pointer"
+            >
+              {{ t("all-services") }}
+            </button>
+            <button
+              *ngFor="let service of availableServices"
+              (click)="setService(activeService === service ? null : service)"
+              [class.bg-green-600]="activeService === service"
+              [class.text-white]="activeService === service"
+              [class.border-green-600]="activeService === service"
+              [class.shadow-md]="activeService === service"
+              [class.bg-transparent]="activeService !== service"
+              [class.text-gray-600]="activeService !== service"
+              [class.border-gray-400]="activeService !== service"
+              [class.hover:bg-gray-100]="activeService !== service"
+              [class.hover:border-gray-600]="activeService !== service"
+              class="rounded-full px-5 py-2 border-2 font-semibold text-sm transition-all duration-300 cursor-pointer"
+            >
+              {{ t("service-" + service) }}
+            </button>
+          </div>
+        </div>
+
+        <div *ngIf="availableServices.length > 0 && availableTechnologies.length > 0" class="flex justify-center py-3">
+          <div class="w-12 h-px bg-green-200"></div>
+        </div>
+
+        <div *ngIf="availableTechnologies.length > 0">
+          <div class="flex items-center justify-center gap-2 mb-3">
+            <span class="material-icons text-gray-500 text-base">filter_alt</span>
+            <span class="text-xs font-medium text-gray-500 uppercase tracking-wider">{{ t("filter-by") | transloco }}</span>
+          </div>
+          <div class="flex flex-wrap justify-center gap-2">
+            <button
+              *ngFor="let tech of availableTechnologies"
+              (click)="toggleTechnology(tech)"
+              [class.bg-gray-800]="selectedTechnologies.includes(tech)"
+              [class.text-white]="selectedTechnologies.includes(tech)"
+              [class.border-gray-800]="selectedTechnologies.includes(tech)"
+              [class.shadow-sm]="selectedTechnologies.includes(tech)"
+              [class.bg-transparent]="!selectedTechnologies.includes(tech)"
+              [class.text-gray-700]="!selectedTechnologies.includes(tech)"
+              [class.border-gray-400]="!selectedTechnologies.includes(tech)"
+              [class.hover:bg-gray-100]="!selectedTechnologies.includes(tech)"
+              class="rounded-full px-3 py-1.5 border text-sm transition-all duration-300 cursor-pointer"
+            >
+              {{ tech }}
+            </button>
+            <button
+              *ngIf="selectedTechnologies.length > 0"
+              (click)="clearFilters()"
+              class="rounded-full px-3 py-1.5 border border-red-300 text-red-600 text-sm transition-all duration-300 cursor-pointer hover:bg-red-50 flex items-center gap-1"
+            >
+              <span class="material-icons text-sm" style="vertical-align: middle">close</span>
+              {{ t("clear-filters") }}
+            </button>
+          </div>
+        </div>
       </div>
 
       <div
@@ -52,10 +107,22 @@
           class="m-5 flex flex-col justify-center items-center"
         >
           <img
+            *ngIf="project.images.length > 0; else noImage"
             class="h-60 xl:h-96 rounded-xl hover:scale-105 transition-all duration-500"
             [src]="project.images[0]"
             [alt]="project.name"
           />
+          <ng-template #noImage>
+            <div class="h-60 xl:h-96 rounded-xl bg-gradient-to-br from-green-400 to-green-600 flex flex-col justify-center items-center p-6 text-white text-center">
+              <h4 class="text-xl font-bold mb-2">{{ project.name }}</h4>
+              <p class="text-sm opacity-90 line-clamp-3">{{ 'projects.project-' + project.id + '.line-1' | transloco }}</p>
+              <div class="flex flex-wrap justify-center gap-1.5 mt-3">
+                <span *ngFor="let tech of project.technologies" class="text-xs px-2.5 py-0.5 bg-white/20 rounded-full">
+                  {{ tech }}
+                </span>
+              </div>
+            </div>
+          </ng-template>
           <div class="flex flex-row my-3 flex-wrap justify-center">
             <p
               *ngFor="let tech of project.technologies"

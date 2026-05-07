@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, ChangeDetectorRef, Component } from '@angular/core';
+import { ActivatedRoute, Router } from '@angular/router';
 import { NavbarGeneralComponent } from '../../components/navbar-general/navbar-general.component';
 import { TranslocoModule } from '@jsverse/transloco';
 import { Project } from '../../../classes/project';
@@ -10,6 +11,7 @@ import { Project } from '../../../classes/project';
   imports: [CommonModule, NavbarGeneralComponent, TranslocoModule],
   templateUrl: './projects.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { class: 'flex flex-col flex-1' },
 })
 export class ProjectsComponent {
   public projects: Project[] = [
@@ -19,6 +21,7 @@ export class ProjectsComponent {
       [1, 2, 3, 4],
       ['assets/dulceblog.webp'],
       ['Angular', 'ExpressJS'],
+      ['backend', 'frontend'],
       'https://github.com/AngelPereiraR/dulce_blog_web',
       'https://dulce-blog.netlify.app/'
     ),
@@ -28,6 +31,7 @@ export class ProjectsComponent {
       [1, 2, 3, 4],
       ['assets/frutyfest.webp'],
       ['Angular', 'NestJS'],
+      ['backend', 'frontend'],
       'https://github.com/AngelPereiraR/frutyfest-web',
       'https://project-frutyfest.netlify.app/'
     ),
@@ -44,6 +48,7 @@ export class ProjectsComponent {
         'assets/projects/gestion-empresas/06-make-order.webp',
       ],
       ['Flutter', 'Java (Spring)'],
+      ['backend', 'mobile'],
       'https://github.com/AngelPereiraR/business_management_frontend',
       'assets/gestion-empresas.apk'
     ),
@@ -52,7 +57,8 @@ export class ProjectsComponent {
       'SalesIn',
       [1, 2, 3, 4, 5],
       ['assets/salesin.webp'],
-      ['Laravel']
+      ['Laravel'],
+      ['backend', 'frontend']
     ),
     new Project(
       5,
@@ -60,6 +66,7 @@ export class ProjectsComponent {
       [1, 2, 3],
       ['assets/gestioncursos.webp'],
       ['Java (Spring)'],
+      ['backend', 'frontend'],
       'https://github.com/AngelPereiraR/gestioncursos'
     ),
     new Project(
@@ -68,15 +75,35 @@ export class ProjectsComponent {
       [1, 2, 3, 4],
       ['assets/almagest.webp'],
       ['Flutter', 'Laravel'],
+      ['backend', 'mobile'],
       'https://github.com/AngelPereiraR/almagest'
     ),
   ];
 
   public selectedTechnologies: string[] = [];
+  public activeService: string | null = null;
+
+  constructor(
+    private route: ActivatedRoute,
+    private router: Router,
+    cdr: ChangeDetectorRef
+  ) {
+    route.queryParams.subscribe((params) => {
+      const service = params['service'];
+      this.activeService =
+        service && this.availableServices.includes(service) ? service : null;
+      this.selectedTechnologies = [];
+      cdr.markForCheck();
+    });
+  }
 
   public get availableTechnologies(): string[] {
     const techs = new Set<string>();
-    for (const project of this.projects) {
+    const service = this.activeService;
+    const filtered = service
+      ? this.projects.filter((p) => p.services.includes(service))
+      : this.projects;
+    for (const project of filtered) {
       for (const tech of project.technologies) {
         techs.add(tech);
       }
@@ -84,15 +111,34 @@ export class ProjectsComponent {
     return Array.from(techs).sort();
   }
 
-  public get filteredProjects(): Project[] {
-    if (this.selectedTechnologies.length === 0) {
-      return this.projects;
+  public get availableServices(): string[] {
+    const services = new Set<string>();
+    for (const project of this.projects) {
+      for (const service of project.services) {
+        services.add(service);
+      }
     }
-    return this.projects.filter((project) =>
-      project.technologies.some((tech) =>
-        this.selectedTechnologies.includes(tech)
-      )
-    );
+    return Array.from(services);
+  }
+
+  public get filteredProjects(): Project[] {
+    return this.projects.filter((project) => {
+      if (
+        this.activeService &&
+        !project.services.includes(this.activeService)
+      ) {
+        return false;
+      }
+      if (
+        this.selectedTechnologies.length > 0 &&
+        !project.technologies.some((tech) =>
+          this.selectedTechnologies.includes(tech)
+        )
+      ) {
+        return false;
+      }
+      return true;
+    });
   }
 
   public toggleTechnology(tech: string): void {
@@ -102,6 +148,13 @@ export class ProjectsComponent {
     } else {
       this.selectedTechnologies.push(tech);
     }
+  }
+
+  public setService(service: string | null): void {
+    this.router.navigate([], {
+      relativeTo: this.route,
+      queryParams: service ? { service } : undefined,
+    });
   }
 
   public clearFilters(): void {

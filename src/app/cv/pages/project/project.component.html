@@ -1,7 +1,7 @@
 <app-navbar-general></app-navbar-general>
 
-<main *transloco="let t; prefix: 'projects'">
-  <section class="p-10 py-32 xl:px-20 2xl:px-52 bg-green-200">
+<main *transloco="let t; prefix: 'projects'" class="flex flex-col flex-1">
+  <section class="flex flex-col flex-1 p-10 py-32 xl:px-20 2xl:px-52 bg-green-200">
     <div *ngIf="selectedProject">
       <header class="flex flex-col justify-between items-center">
         <h1 class="text-lg font-bold text-green-600 pb-3 lg:pb-0">Portfolio</h1>
@@ -9,19 +9,24 @@
           {{ selectedProject.name }}
         </h2>
       </header>
-      <div class="mt-10 flex justify-center items-center">
+      <div *ngIf="selectedProject.images.length > 0" class="mt-10 flex justify-center items-center">
         <img
           class="h-60 xl:h-96 rounded-xl hover:scale-105 transition-all duration-500"
           *ngIf="selectedProject.images.length === 1"
           src="{{ selectedProject.images[0] }}"
           alt="{{ selectedProject.name }}"
         />
-        <div *ngIf="selectedProject.images.length !== 1">
+        <div *ngIf="selectedProject.images.length > 1">
           <div class="flex justify-center items-center">
             <carousel [images]="selectedProject.images"></carousel>
           </div>
         </div>
       </div>
+      <iframe
+        *ngIf="selectedProject.images.length === 0 && pdfSafeUrl"
+        [src]="pdfSafeUrl"
+        class="mt-10 w-full h-[500px] xl:h-[700px] rounded-xl border-0"
+      ></iframe>
       <div class="mt-10">
         <h3 class="text-3xl font-bold">{{ t("description") | transloco }}:</h3>
         <p

@@ -8,6 +8,7 @@ import { TranslocoModule } from '@jsverse/transloco';
   imports: [CommonModule, TranslocoModule],
   templateUrl: './projects.component.html',
   changeDetection: ChangeDetectionStrategy.OnPush,
+  host: { class: 'flex flex-col flex-1' },
 })
 export class ProjectsComponent implements OnInit {
   ngOnInit(): void {}
