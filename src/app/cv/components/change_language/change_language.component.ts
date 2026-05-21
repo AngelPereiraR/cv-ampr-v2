@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
-import { LanguageService } from 'src/app/services/language.service';
+import { LanguageService } from '../../../services/language.service';
 
 @Component({
   selector: 'change-language',

@@ -3,7 +3,7 @@ import { ChangeDetectionStrategy, Component, type OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 import { NavbarGeneralComponent } from '../../components/navbar-general/navbar-general.component';
-import { Project } from 'src/app/classes/project';
+import { Project } from '../../../classes/project';
 import { CarouselComponent } from '../../components/carousel/carousel.component';
 import { TranslocoModule } from '@jsverse/transloco';
 
