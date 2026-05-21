@@ -87,6 +87,7 @@
     "service-backend": "Backend",
     "service-frontend": "Frontend",
     "service-mobile": "Móvil",
+    "service-ai": "Inteligencia Artificial",
     "clear-filters": "Limpiar filtros",
     "no-projects-found": "No se encontraron proyectos",
     "description": "Descripción",
@@ -96,45 +97,69 @@
       "github": "Enlace a Github",
       "download": "Descargar app",
       "live": "Versión Live",
+      "download-pdf": "Descargar PDF",
       "see-all": "Ver todos los proyectos",
       "principal": "Ir a página principal"
     },
     "project-1": {
+      "line-1": "Sistema integral de análisis y visualización de ofertas laborales que combina FastAPI backend, React frontend, IA Generativa y notificaciones en tiempo real vía Telegram.",
+      "line-2": "Analiza ofertas con un sistema dual-fase (ATS + RRHH), genera CV adaptados a cada puesto mediante DeepSeek, e integra scraping inteligente en cascada (Jina AI, FireCrawl, HTTP directo).",
+      "line-3": "Arquitectura distribuida con servidor FastAPI asíncrono, bot thread para monitoreo automático de alertas de LinkedIn e InfoJobs vía Gmail API, y worker de notificaciones Telegram.",
+      "line-4": "Puntuación 0-100 con bandas de clasificación (Rechazo ATS, Descarte, Apto, Fuerte, Ideal) y generación de CV personalizado en PDF real solo para ofertas con score ≥ 60."
+    },
+    "project-2": {
+      "line-1": "Sistema de gestión de inventarios compuesto por una API REST con Express.js y PostgreSQL, y una aplicación móvil multiplataforma desarrollada con Flutter.",
+      "line-2": "Permite gestionar almacenes, productos, listas de compra y notificaciones, con historial completo de cambios de stock y escaneo de códigos de barras integrado.",
+      "line-3": "Arquitectura limpia con patrón BLoC en Flutter, API REST con autenticación JWT + API Key, refresh token automático y almacenamiento seguro de credenciales.",
+      "line-4": "Incluye roles de usuario por almacén (viewer, editor, admin), sincronización en tiempo real y soporte para Android, iOS, Web y Windows."
+    },
+    "project-3": {
+      "line-1": "Sistema de visión artificial para analizar documentos históricos escaneados. Combina múltiples métodos de detección de layout y varios motores OCR con evaluación contra ground truth.",
+      "line-2": "Implementa un pipeline completo: detección de regiones de texto, búsqueda sistemática de configuraciones, ranking heurístico, validación multi-motor OCR y comparación mediante CER, WER y métricas de orden de lectura.",
+      "line-3": "Compara 5 métodos de layout (OpenCV, DocLayout-YOLO, YOLO11, PaddleOCR PP-StructureV3, IBM Docling) y 4 motores OCR (EasyOCR, Tesseract, PaddleOCR, DeepSeek-OCR) sobre 18 imágenes históricas escaneadas.",
+      "line-4": "La mejor combinación fue OpenCV + DeepSeek-OCR con un 95.35% de accuracy de contenido, evaluando 164 configuraciones de layout distintas."
+    },
+    "project-4": {
       "line-1": "Blog de un cliente.",
       "line-2": "En la pantalla inicial se ve la última publicación.",
       "line-3": "También se dispone un archivo con todos los artículos disponibles divididos por categorías y subcategorías. A su vez, hay disponible un buscador para encontrar artículos en concreto.",
       "line-4": "Hay disponible un reproductor de música en el que sonará una canción en bucle."
     },
-    "project-2": {
+    "project-5": {
       "line-1": "La página web del FrutyFest, un evento organizado por ByFruty, streamer de Twitch y YouTuber, ofrece información sobre las ediciones pasadas y futuras del evento.",
       "line-2": "Presenta una tabla con los participantes seleccionados y un ranking basado en las puntuaciones obtenidas.",
       "line-3": "Para participar, los usuarios deben registrarse y ser seleccionados por un administrador, quien también puede gestionar equipos y modos de juego en la base de datos.",
       "line-4": "Durante el evento, los administradores califican cada modo de juego según las reglas establecidas."
     },
-    "project-3": {
+    "project-6": {
       "line-1": "El proyecto es una aplicación que simplifica la gestión de catálogos para empresas y permite a los clientes hacer pedidos de forma interactiva.",
       "line-2": "Para empresas, ofrece funciones de inicio de sesión y gestión de catálogo, visualización con filtros y gestión de sugerencias de clientes.",
       "line-3": "Los clientes, tras registro y validación, exploran catálogos, gestionan un carrito, dan sugerencias y generan pedidos con confirmación adicional.",
       "line-4": "El administrador controla la gestión de usuarios, datos de empresas, productos, categorías, sugerencias y pedidos, teniendo un control total sobre la aplicación.",
       "line-5": "En resumen, mejora la interacción y eficiencia en la gestión de pedidos entre empresas y clientes."
     },
-    "project-4": {
+    "project-7": {
       "line-1": "Se trata de una página web que cuenta con un sistema de administración y usuarios.",
       "line-2": "Los usuarios deben registrarse para acceder al contenido de la página.",
       "line-3": "El administrador tiene la responsabilidad de agregar ofertas y artículos.",
       "line-4": "Los usuarios pueden visualizar las ofertas disponibles y aplicar a ellas.",
       "line-5": "Después de aplicar, tienen la opción de generar un PDF con las ofertas a las que han aplicado, el cual pueden enviar por correo electrónico o descargar directamente."
     },
-    "project-5": {
+    "project-8": {
       "line-1": "Es una página web que involucra a un administrador, profesores y alumnos.",
       "line-2": "Los profesores tienen la capacidad de crear noticias y evaluar a los alumnos que están inscritos en sus asignaturas.",
       "line-3": "Los alumnos pueden inscribirse en las asignaturas de cualquier profesor y visualizar las calificaciones correspondientes."
     },
-    "project-6": {
+    "project-9": {
       "line-1": "Es una aplicación móvil desarrollada en Flutter que permite a empresas mayoristas agregar productos a una base de datos y asignarles precios.",
       "line-2": "Además, empresas minoristas pueden registrarse como usuarios para realizar pedidos a las empresas mayoristas.",
       "line-3": "API de Laravel realizada por un profesor de DAM (Abandonado).",
       "line-4": "Actualmente fuera de servicio."
+    },
+    "linkedin-section": {
+      "title": "Big Data & Inteligencia Artificial",
+      "description": "+40 proyectos que demuestran mi experiencia en análisis de datos, machine learning y arquitecturas Big Data",
+      "cta": "Ver proyectos en LinkedIn"
     }
   },
   "footer": {

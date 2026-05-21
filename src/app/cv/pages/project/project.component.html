@@ -52,26 +52,27 @@
       </h3>
       <div class="mt-5 flex flex-col lg:flex-row items-start">
         <a
-          class="m-3 p-3 font-bold bg-black text-white hover:bg-green-200 hover:text-black border border-black rounded-xl hover:scale-110 transition-all duration-500 tracking-wide leading-6"
-          href="{{ selectedProject.githubLink }}"
-          target="_blank"
-          *ngIf="selectedProject.githubLink"
-        >
-          {{ t("links.github") | transloco }} </a
-        ><a
-          class="m-3 p-3 font-bold bg-black text-white hover:bg-green-200 hover:text-black border border-black rounded-xl hover:scale-110 transition-all duration-500 tracking-wide leading-6"
-          href="{{ selectedProject.liveLink }}"
-          target="_blank"
-          *ngIf="selectedProject.liveLink"
-        >
-          <span *ngIf="selectedProject.liveLink?.includes('assets')">
-            {{ t("links.download") | transloco }}
-          </span>
+           class="m-3 p-3 font-bold bg-black text-white hover:bg-green-200 hover:text-black border border-black rounded-xl hover:scale-110 transition-all duration-500 tracking-wide leading-6"
+           href="{{ selectedProject.liveLink }}"
+           target="_blank"
+           *ngIf="selectedProject.liveLink"
+         >
+           <span *ngIf="selectedProject.liveLink?.includes('assets')">
+             {{ t("links.download") | transloco }}
+           </span>
 
-          <span *ngIf="!selectedProject.liveLink?.includes('assets')">
-            {{ t("links.live") | transloco }}
-          </span>
-        </a>
+           <span *ngIf="!selectedProject.liveLink?.includes('assets')">
+             {{ t("links.live") | transloco }}
+           </span>
+         </a>
+         <a
+           class="m-3 p-3 font-bold bg-black text-white hover:bg-green-200 hover:text-black border border-black rounded-xl hover:scale-110 transition-all duration-500 tracking-wide leading-6"
+           href="{{ selectedProject.pdfUrl }}"
+           target="_blank"
+           *ngIf="selectedProject.pdfUrl"
+         >
+           {{ t("links.download-pdf") | transloco }}
+         </a>
         <a
           class="m-3 p-3 font-bold bg-black text-white hover:bg-green-200 hover:text-black border border-black rounded-xl hover:scale-110 transition-all duration-500 tracking-wide leading-6"
           href="projects"

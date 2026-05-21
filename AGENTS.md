@@ -1,4 +1,4 @@
-# cv-ampr-v2 — Personal Portfolio (Angular 19)
+# cv-ampr-v2 — Personal Portfolio (Angular 21)
 
 ## Golden Rule: Critical Thinking Before Action
 
@@ -128,5 +128,5 @@ src/app/
 ## TypeScript & Angular strictness
 
 - `strict: true`, `strictTemplates: true`, `strictInputAccessModifiers: true`, `strictInjectionParameters: true`
-- Dependencies: `@angular/animations` ^19.2.21, `@angular/forms` ^19.2.21, `rxjs` ~7.8.0, `zone.js` ~0.15.0
-- Dev: `autoprefixer` ^10.4.19, `postcss` ^8.4.38, `typescript` ~5.5.4
+- Dependencies: `@angular/animations` ^21.2.14, `@angular/forms` ^21.2.14, `rxjs` ~7.8.2, `zone.js` ~0.16.2
+- Dev: `autoprefixer` ^10.5.0, `postcss` ^8.5.15, `typescript` >=5.9 <6.0
